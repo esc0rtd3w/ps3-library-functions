@@ -8,5 +8,8 @@ Collection of PS3 Library Functions Using FNIDS
 We could really use your help adding support for other firmware versions!
 ===
 
+Offsets: CEX = DEX+0x100F0
+===
+
 Thanks!
 ===
