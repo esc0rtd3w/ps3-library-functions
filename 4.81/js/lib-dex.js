@@ -375,6 +375,496 @@ pngdec_ppuonly_v481D =
 	cellPngDecSetParameter : 0x006FB490
 }
 
+
+// System Console ID Functions
+sysConsoleId_v481D =
+{
+	lib_fnid_ptr: 0x0063F3D0, // ExportFNIDTable_sysConsoleId
+	lib_func_ptr: 0x0063F3D4, // ExportStubTable_sysConsoleId
+	
+	// mapped fnid 0xF220F751
+	sysConsoleId : 006FC6A0,
+}
+
+
+// System PRX For User Functions
+sysPrxForUser_v481D =
+{
+	lib_fnid_ptr: 0x0063EE1C, // ExportFNIDTable_sysPrxForUser
+	lib_func_ptr: 0x0063F114, // ExportStubTable_sysPrxForUser
+	
+	// mapped fnid 0x2E20EC1
+	unk_2E20EC1 : 0x00000000,
+	
+	// mapped fnid 0x341BB97
+	sys_prx_get_module_id_by_address : 0x006FC928,
+	
+	// mapped fnid 0x4E83D2C
+	 _sys_strncmp : 0x00000000,
+	
+	// mapped fnid 0x52D29A6
+	_sys_strcat : 0x00000000,
+	
+	// mapped fnid 0x5C65656
+	sys_mempool_try_allocate_block : 0x00000000,
+	
+	// mapped fnid 0x618936B
+	_sys_vsnprintf : 0x00000000,
+	
+	// mapped fnid 0x6574237
+	_sys_snprintf : 0x00000000,
+	
+	// mapped fnid 0x94FF0D1
+	unk_94FF0D1 : 0x00000000,
+	
+	// mapped fnid 0xFB028AF
+	unk_FB028AF : 0x00000000,
+	
+	// mapped fnid 0x121E5DA5
+	unk_121E5DA5 : 0x00000000,
+	
+	// mapped fnid 0x1573DC3F
+	sys_lwmutex_lock : 0x00000000,
+	
+	// mapped fnid 0x191F0C4A
+	_sys_strrchr : 0x00000000,
+	
+	// mapped fnid 0x1AE10B92
+	_sys_spu_printf_attach_thread : 0x00000000,
+	
+	// mapped fnid 0x1BC200F4
+	sys_lwmutex_unlock : 0x00000000,
+	
+	// mapped fnid 0x1C9A942C
+	sys_lwcond_destroy : 0x00000000,
+	
+	// mapped fnid 0x1CA525A2
+	_sys_strncasecmp : 0x00000000,
+	
+	// mapped fnid 0x1ED454CE
+	sys_spu_elf_get_information : 0x00000000,
+	
+	// mapped fnid 0x24A1EA07
+	sys_ppu_thread_create : 0x00000000,
+	
+	// mapped fnid 0x25062C8E
+	unk_25062C8E : 0x00000000,
+	
+	// mapped fnid 0x25596F51
+	sys_mempool_get_count : 0x00000000,
+	
+	// mapped fnid 0x26090058
+	sys_prx_load_module : 0x00000000,
+	
+	// mapped fnid 0x27427742
+	_sys_memmove : 0x00000000,
+	
+	// mapped fnid 0x2A6D9D51
+	sys_lwcond_wait : 0x00000000,
+	
+	// mapped fnid 0x2C847572
+	_sys_process_atexitspawn : 0x00000000,
+	
+	// mapped fnid 0x2D36462B
+	_sys_strlen : 0x00000000,
+	
+	// mapped fnid 0x2F256B29
+	unk_2F256B29 : 0x00000000,
+	
+	// mapped fnid 0x2F85C0EF
+	sys_lwmutex_create : 0x00000000,
+	
+	// mapped fnid 0x3172759D
+	sys_game_get_temperature : 0x006FC780,
+	
+	// mapped fnid 0x318F17E1
+	_sys_memalign : 0x00000000,
+	
+	// mapped fnid 0x350D454E
+	sys_ppu_thread_get_id : 0x00000000,
+	
+	// mapped fnid 0x35168520
+	_sys_heap_malloc : 0x00000000,
+	
+	// mapped fnid 0x39E9B068
+	unk_39E9B068 : 0x00000000,
+	
+	// mapped fnid 0x3BD53C7B
+	_sys_memchr : 0x00000000,
+	
+	// mapped fnid 0x3DD4A957
+	sys_ppu_thread_register_atexit : 0x00000000,
+	
+	// mapped fnid 0x3EF17F8C
+	unk_3EF17F8C : 0x00000000,
+	
+	// mapped fnid 0x409AD939
+	sys_mmapper_free_memory : 0x00000000,
+	
+	// mapped fnid 0x4232B0DB
+	unk_4232B0DB : 0x00000000,
+	
+	// mapped fnid 0x42B23552
+	sys_prx_register_library : 0x00000000,
+	
+	// mapped fnid 0x44265C08
+	_sys_heap_memalign : 0x00000000,
+	
+	// mapped fnid 0x459B4393
+	_sys_strcmp : 0x00000000,
+	
+	// mapped fnid 0x45FE2FCE
+	_sys_spu_printf_initialize : 0x00000000,
+	
+	// mapped fnid 0x4643BA6E
+	sys_mmapper_unmap_memory : 0x00000000,
+	
+	// mapped fnid 0x4A071D98
+	sys_interrupt_thread_disestablish : 0x00000000,
+	
+	// mapped fnid 0x4B2F301A
+	_sys_tolower : 0x00000000,
+	
+	// mapped fnid 0x4BBF59D0
+	unk_4BBF59D0 : 0x00000000,
+	
+	// mapped fnid 0x4F7172C9
+	sys_process_is_stack : 0x00000000,
+	
+	// mapped fnid 0x5267CB35
+	sys_spinlock_unlock : 0x00000000,
+	
+	// mapped fnid 0x52AADADF
+	sys_lwcond_signal_to : 0x00000000,
+	
+	// mapped fnid 0x5FDFB2FE
+	_sys_spu_printf_detach_group : 0x00000000,
+	
+	// mapped fnid 0x608212FC
+	sys_mempool_free_block : 0x00000000,
+	
+	// mapped fnid 0x620E35A7
+	sys_game_get_system_sw_version : 0x00000000,
+	
+	// mapped fnid 0x637BDAAE
+	unk_637BDAAE : 0x00000000,
+	
+	// mapped fnid 0x67F9FEDB
+	sys_game_process_exitspawn2 : 0x00000000,
+	
+	// mapped fnid 0x68B9B011
+	_sys_memset : 0x00000000,
+	
+	// mapped fnid 0x6BF66EA7
+	_sys_memcpy : 0x00000000,
+	
+	// mapped fnid 0x6E05231D
+	sys_game_watchdog_stop : 0x00000000,
+	
+	// mapped fnid 0x70258515
+	sys_mmapper_allocate_memory_from_container : 0x00000000,
+	
+	// mapped fnid 0x71A8472A
+	sys_get_random_number : 0x00000000,
+	
+	// mapped fnid 0x722A0254
+	sys_spinlock_trylock : 0x00000000,
+	
+	// mapped fnid 0x728FD7C3
+	unk_728FD7C3 : 0x00000000,
+	
+	// mapped fnid 0x74311398
+	sys_prx_get_my_module_id : 0x00000000,
+	
+	// mapped fnid 0x744680A2
+	sys_initialize_tls : 0x00000000,
+	
+	// mapped fnid 0x7498887B
+	_sys_strchr : 0x00000000,
+	
+	// mapped fnid 0x750DD5CD
+	unk_750DD5CD : 0x00000000,
+	
+	// mapped fnid 0x791B9219
+	_sys_vsprintf : 0x00000000,
+	
+	// mapped fnid 0x7B034C78
+	unk_7B034C78 : 0x00000000,
+	
+	// mapped fnid 0x7DAFF8BB
+	unk_7DAFF8BB : 0x00000000,
+	
+	// mapped fnid 0x80FB0C19
+	sys_prx_stop_module : 0x00000000,
+	
+	// mapped fnid 0x8461E528
+	sys_time_get_system_time : 0x00000000,
+	
+	// mapped fnid 0x84BB6774
+	sys_prx_get_module_info : 0x00000000,
+	
+	// mapped fnid 0x87C87495
+	unk_87C87495 : 0x00000000,
+	
+	// mapped fnid 0x893305FA
+	sys_raw_spu_load : 0x00000000,
+	
+	// mapped fnid 0x8985B5B6
+	_sys_heap_stats : 0x00000000,
+	
+	// mapped fnid 0x8A2F159B
+	console_getc : 0x00000000,
+	
+	// mapped fnid 0x8A561D92
+	_sys_heap_free : 0x00000000,
+	
+	// mapped fnid 0x8BB03AB8
+	sys_game_board_storage_write : 0x00000000,
+	
+	// mapped fnid 0x8C2BB498
+	sys_spinlock_initialize : 0x00000000,
+	
+	// mapped fnid 0x8CFEF376
+	unk_8CFEF376 : 0x00000000,
+	
+	// mapped fnid 0x92A7EB40
+	unk_92A7EB40 : 0x00000000,
+	
+	// mapped fnid 0x96328741
+	_sys_process_at_Exitspawn : 0x00000000,
+	
+	// mapped fnid 0x996F7CF8
+	_sys_strncat : 0x00000000,
+	
+	// mapped fnid 0x99C88692
+	_sys_strcpy : 0x00000000,
+	
+	// mapped fnid 0x9C9605EE
+	unk_9C9605EE : 0x00000000,
+	
+	// mapped fnid 0x9D2EC4FF
+	unk_9D2EC4FF : 0x00000000,
+	
+	// mapped fnid 0x9D3C0F81
+	sys_mempool_destroy : 0x00000000,
+	
+	// mapped fnid 0x9E0623B5
+	sys_game_watchdog_start : 0x00000000,
+	
+	// mapped fnid 0x9F04F7AF
+	_sys_printf : 0x00000000,
+	
+	// mapped fnid 0x9F18429D
+	sys_prx_start_module : 0x00000000,
+	
+	// mapped fnid 0x9F950780
+	sys_game_get_rtc_status : 0x00000000,
+	
+	// mapped fnid 0x9FB6228E
+	unk_9FB6228E : 0x00000000,
+	
+	// mapped fnid 0xA146A143
+	sys_mempool_allocate_block : 0x00000000,
+	
+	// mapped fnid 0xA1F9EAFE
+	_sys_sprintf : 0x00000000,
+	
+	// mapped fnid 0xA285139D
+	sys_spinlock_lock : 0x00000000,
+	
+	// mapped fnid 0xA2C7BA64
+	sys_prx_exitspawn_with_level : 0x00000000,
+	
+	// mapped fnid 0xA330AD84
+	sys_prx_load_module_on_memcontainer_by_fd : 0x00000000,
+	
+	// mapped fnid 0xA3E3BE68
+	sys_ppu_thread_once : 0x00000000,
+	
+	// mapped fnid 0xA5D06BF0
+	sys_prx_get_module_list : 0x00000000,
+	
+	// mapped fnid 0xA9879A33
+	unk_A9879A33 : 0x00000000,
+	
+	// mapped fnid 0xAA6D9BFF
+	sys_prx_load_module_on_memcontainer : 0x00000000,
+	
+	// mapped fnid 0xAC6FC404
+	sys_ppu_thread_unregister_atexit : 0x00000000,
+	
+	// mapped fnid 0xACAD8FB6
+	sys_game_watchdog_clear : 0x00000000,
+	
+	// mapped fnid 0xAEB78725
+	sys_lwmutex_trylock : 0x00000000,
+	
+	// mapped fnid 0xAEDE4B03
+	_sys_heap_delete_heap : 0x00000000,
+	
+	// mapped fnid 0xAFF080A4
+	sys_ppu_thread_exit : 0x00000000,
+	
+	// mapped fnid 0xB1BD7A61
+	unk_B1BD7A61 : 0x00000000,
+	
+	// mapped fnid 0xB257540B
+	sys_mmapper_allocate_memory : 0x00000000,
+	
+	// mapped fnid 0xB27C8AE7
+	sys_prx_load_module_list : 0x00000000,
+	
+	// mapped fnid 0xB2FCF2C8
+	_sys_heap_create_heap : 0x00000000,
+	
+	// mapped fnid 0xB3BBCF2A
+	_sys_spu_printf_detach_thread : 0x00000000,
+	
+	// mapped fnid 0xB5D5F64E
+	unk_B5D5F64E : 0x00000000,
+	
+	// mapped fnid 0xB6369393
+	_sys_heap_get_total_free_size : 0x00000000,
+	
+	// mapped fnid 0xB995662E
+	sys_raw_spu_image_load : 0x00000000,
+	
+	// mapped fnid 0xB9BF1078
+	_sys_heap_alloc_heap_memory : 0x00000000,
+	
+	// mapped fnid 0xBAB62B99
+	unk_BAB62B99 : 0x00000000,
+	
+	// mapped fnid 0xBDB18F83
+	_sys_malloc : 0x00000000,
+	
+	// mapped fnid 0xBF8EE5BB
+	unk_BF8EE5BB : 0x00000000,
+	
+	// mapped fnid 0xC3476D0C
+	sys_lwmutex_destroy : 0x00000000,
+	
+	// mapped fnid 0xC4FD6121
+	_sys_qsort : 0x00000000,
+	
+	// mapped fnid 0xC839BB4C
+	unk_C839BB4C : 0x00000000,
+	
+	// mapped fnid 0xCA9A60BF
+	sys_mempool_create : 0x00000000,
+	
+	// mapped fnid 0xD0EA47A7
+	sys_prx_unregister_library : 0x00000000,
+	
+	// mapped fnid 0xD19688BC
+	unk_D19688BC : 0x00000000,
+	
+	// mapped fnid 0xD1AD4570
+	_sys_heap_get_mallinfo : 0x00000000,
+	
+	// mapped fnid 0xD3039D4D
+	_sys_strncpy : 0x00000000,
+	
+	// mapped fnid 0xD66C2D52
+	unk_D66C2D52 : 0x00000000,
+	
+	// mapped fnid 0xD8A6F882
+	unk_D8A6F882 : 0x00000000,
+	
+	// mapped fnid 0xDA0EB71A
+	sys_lwcond_create : 0x00000000,
+	
+	// mapped fnid 0xDB6B3250
+	sys_spu_elf_get_segments : 0x00000000,
+	
+	// mapped fnid 0xDC578057
+	sys_mmapper_map_memory : 0x00000000,
+	
+	// mapped fnid 0xDD0C1E09
+	_sys_spu_printf_attach_group : 0x00000000,
+	
+	// mapped fnid 0xDD3B27AC
+	_sys_spu_printf_finalize : 0x00000000,
+	
+	// mapped fnid 0xDE0C682C
+	unk_DE0C682C : 0x00000000,
+	
+	// mapped fnid 0xDE2F9C85
+	unk_DE2F9C85 : 0x00000000,
+	
+	// mapped fnid 0xE0998DBF
+	sys_prx_get_module_id_by_name : 0x00000000,
+	
+	// mapped fnid 0xE0DA8EFD
+	sys_spu_image_close : 0x00000000,
+	
+	// mapped fnid 0xE66BAC36
+	console_putc : 0x00000000,
+	
+	// mapped fnid 0xE6F2C1E7
+	sys_process_exit : 0x00000000,
+	
+	// mapped fnid 0xE75C40F2
+	unk_E75C40F2 : 0x00000000,
+	
+	// mapped fnid 0xE76964F5
+	sys_game_board_storage_read : 0x00000000,
+	
+	// mapped fnid 0xE7EF3A80
+	sys_prx_load_module_list_on_memcontainer : 0x00000000,
+	
+	// mapped fnid 0xE95FFA0A
+	unk_E95FFA0A : 0x00000000,
+	
+	// mapped fnid 0xE9A1BD84
+	sys_lwcond_signal_all : 0x00000000,
+	
+	// mapped fnid 0xEBE5F72F
+	sys_spu_image_import : 0x00000000,
+	
+	// mapped fnid 0xEDEA5F4A
+	unk_EDEA5F4A : 0x00000000,
+	
+	// mapped fnid 0xEEF75113
+	_sys_toupper : 0x00000000,
+	
+	// mapped fnid 0xEF68C17C
+	sys_prx_load_module_by_fd : 0x00000000,
+	
+	// mapped fnid 0xEF87A695
+	sys_lwcond_signal : 0x00000000,
+	
+	// mapped fnid 0xF0AECE0D
+	sys_prx_unload_module : 0x00000000,
+	
+	// mapped fnid 0xF57E1D6F
+	console_write : 0x00000000,
+	
+	// mapped fnid 0xF7F7FB20
+	_sys_free : 0x00000000,
+	
+	// mapped fnid 0xF82CF400
+	unk_F82CF400 : 0x00000000,
+	
+	// mapped fnid 0xF923DADA
+	unk_F923DADA : 0x00000000,
+	
+	// mapped fnid 0xFA7F693D
+	_sys_vprintf : 0x00000000,
+	
+	// mapped fnid 0xFB5DB080
+	_sys_memcmp : 0x00000000,
+	
+	// mapped fnid 0xFC52A7A9
+	sys_game_process_exitspawn : 0x00000000,
+	
+	// mapped fnid 0xFECC05B6
+	unk_FECC05B6 : 0x00000000,
+	
+	// mapped fnid 0xFF34C76C
+	unk_FF34C76C : 0x00000000
+}
+
 // System FileSystem Functions
 sys_fs_v481D =
 {
@@ -2341,4 +2831,14 @@ vshtask_v481D =
 
 	// mapped fnid 0xA02D46E7
 	unk_A02D46E7 : 0x006E6408
+}
+
+
+// X-Setting Functions
+xsetting_v481D =
+{
+	lib_fnid_ptr: 0x0064300C, // ExportFNIDTable_xsetting
+	lib_func_ptr: 0x00643080, // ExportStubTable_xsetting
+	
+	
 }
