@@ -1705,7 +1705,7 @@ stdc_v481D =
 	Assert : 0x006FC398,
 
 	// mapped fnid 0xB120F6CA
-	close : 0x006FC420,
+	_close : 0x006FC420, // original name was "close"
 
 	// mapped fnid 0xB1F4779D
 	spu_thread_printf : 0x006FC3A0,
@@ -1846,7 +1846,7 @@ stdc_v481D =
 	getc : 0x006FC0A8,
 
 	// mapped fnid 0xF356418C
-	open : 0x006FC428,
+	_open : 0x006FC428, // original name was "open"
 
 	// mapped fnid 0xF3EC0258
 	round : 0x006FBE78,
