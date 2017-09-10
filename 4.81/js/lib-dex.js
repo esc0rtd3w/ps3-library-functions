@@ -375,960 +375,6 @@ pngdec_ppuonly_v481D =
 	cellPngDecSetParameter : 0x006FB490
 }
 
-
-// System Console ID Functions
-sysConsoleId_v481D =
-{
-	lib_fnid_ptr: 0x0063F3D0, // ExportFNIDTable_sysConsoleId
-	lib_func_ptr: 0x0063F3D4, // ExportStubTable_sysConsoleId
-	
-	// mapped fnid 0xF220F751
-	sysConsoleId : 0x006FC6A0,
-}
-
-
-// System PRX For User Functions
-sysPrxForUser_v481D =
-{
-	lib_fnid_ptr: 0x0063EE1C, // ExportFNIDTable_sysPrxForUser
-	lib_func_ptr: 0x0063F114, // ExportStubTable_sysPrxForUser
-	
-	// mapped fnid 0x2E20EC1
-	unk_2E20EC1 : 0x00000000,
-	
-	// mapped fnid 0x341BB97
-	sys_prx_get_module_id_by_address : 0x006FC928,
-	
-	// mapped fnid 0x4E83D2C
-	 _sys_strncmp : 0x00000000,
-	
-	// mapped fnid 0x52D29A6
-	_sys_strcat : 0x00000000,
-	
-	// mapped fnid 0x5C65656
-	sys_mempool_try_allocate_block : 0x00000000,
-	
-	// mapped fnid 0x618936B
-	_sys_vsnprintf : 0x00000000,
-	
-	// mapped fnid 0x6574237
-	_sys_snprintf : 0x00000000,
-	
-	// mapped fnid 0x94FF0D1
-	unk_94FF0D1 : 0x00000000,
-	
-	// mapped fnid 0xFB028AF
-	unk_FB028AF : 0x00000000,
-	
-	// mapped fnid 0x121E5DA5
-	unk_121E5DA5 : 0x00000000,
-	
-	// mapped fnid 0x1573DC3F
-	sys_lwmutex_lock : 0x00000000,
-	
-	// mapped fnid 0x191F0C4A
-	_sys_strrchr : 0x00000000,
-	
-	// mapped fnid 0x1AE10B92
-	_sys_spu_printf_attach_thread : 0x00000000,
-	
-	// mapped fnid 0x1BC200F4
-	sys_lwmutex_unlock : 0x00000000,
-	
-	// mapped fnid 0x1C9A942C
-	sys_lwcond_destroy : 0x00000000,
-	
-	// mapped fnid 0x1CA525A2
-	_sys_strncasecmp : 0x00000000,
-	
-	// mapped fnid 0x1ED454CE
-	sys_spu_elf_get_information : 0x00000000,
-	
-	// mapped fnid 0x24A1EA07
-	sys_ppu_thread_create : 0x00000000,
-	
-	// mapped fnid 0x25062C8E
-	unk_25062C8E : 0x00000000,
-	
-	// mapped fnid 0x25596F51
-	sys_mempool_get_count : 0x00000000,
-	
-	// mapped fnid 0x26090058
-	sys_prx_load_module : 0x00000000,
-	
-	// mapped fnid 0x27427742
-	_sys_memmove : 0x00000000,
-	
-	// mapped fnid 0x2A6D9D51
-	sys_lwcond_wait : 0x00000000,
-	
-	// mapped fnid 0x2C847572
-	_sys_process_atexitspawn : 0x00000000,
-	
-	// mapped fnid 0x2D36462B
-	_sys_strlen : 0x00000000,
-	
-	// mapped fnid 0x2F256B29
-	unk_2F256B29 : 0x00000000,
-	
-	// mapped fnid 0x2F85C0EF
-	sys_lwmutex_create : 0x00000000,
-	
-	// mapped fnid 0x3172759D
-	sys_game_get_temperature : 0x006FC780,
-	
-	// mapped fnid 0x318F17E1
-	_sys_memalign : 0x00000000,
-	
-	// mapped fnid 0x350D454E
-	sys_ppu_thread_get_id : 0x00000000,
-	
-	// mapped fnid 0x35168520
-	_sys_heap_malloc : 0x00000000,
-	
-	// mapped fnid 0x39E9B068
-	unk_39E9B068 : 0x00000000,
-	
-	// mapped fnid 0x3BD53C7B
-	_sys_memchr : 0x00000000,
-	
-	// mapped fnid 0x3DD4A957
-	sys_ppu_thread_register_atexit : 0x00000000,
-	
-	// mapped fnid 0x3EF17F8C
-	unk_3EF17F8C : 0x00000000,
-	
-	// mapped fnid 0x409AD939
-	sys_mmapper_free_memory : 0x00000000,
-	
-	// mapped fnid 0x4232B0DB
-	unk_4232B0DB : 0x00000000,
-	
-	// mapped fnid 0x42B23552
-	sys_prx_register_library : 0x00000000,
-	
-	// mapped fnid 0x44265C08
-	_sys_heap_memalign : 0x00000000,
-	
-	// mapped fnid 0x459B4393
-	_sys_strcmp : 0x00000000,
-	
-	// mapped fnid 0x45FE2FCE
-	_sys_spu_printf_initialize : 0x00000000,
-	
-	// mapped fnid 0x4643BA6E
-	sys_mmapper_unmap_memory : 0x00000000,
-	
-	// mapped fnid 0x4A071D98
-	sys_interrupt_thread_disestablish : 0x00000000,
-	
-	// mapped fnid 0x4B2F301A
-	_sys_tolower : 0x00000000,
-	
-	// mapped fnid 0x4BBF59D0
-	unk_4BBF59D0 : 0x00000000,
-	
-	// mapped fnid 0x4F7172C9
-	sys_process_is_stack : 0x00000000,
-	
-	// mapped fnid 0x5267CB35
-	sys_spinlock_unlock : 0x00000000,
-	
-	// mapped fnid 0x52AADADF
-	sys_lwcond_signal_to : 0x00000000,
-	
-	// mapped fnid 0x5FDFB2FE
-	_sys_spu_printf_detach_group : 0x00000000,
-	
-	// mapped fnid 0x608212FC
-	sys_mempool_free_block : 0x00000000,
-	
-	// mapped fnid 0x620E35A7
-	sys_game_get_system_sw_version : 0x00000000,
-	
-	// mapped fnid 0x637BDAAE
-	unk_637BDAAE : 0x00000000,
-	
-	// mapped fnid 0x67F9FEDB
-	sys_game_process_exitspawn2 : 0x00000000,
-	
-	// mapped fnid 0x68B9B011
-	_sys_memset : 0x00000000,
-	
-	// mapped fnid 0x6BF66EA7
-	_sys_memcpy : 0x00000000,
-	
-	// mapped fnid 0x6E05231D
-	sys_game_watchdog_stop : 0x00000000,
-	
-	// mapped fnid 0x70258515
-	sys_mmapper_allocate_memory_from_container : 0x00000000,
-	
-	// mapped fnid 0x71A8472A
-	sys_get_random_number : 0x00000000,
-	
-	// mapped fnid 0x722A0254
-	sys_spinlock_trylock : 0x00000000,
-	
-	// mapped fnid 0x728FD7C3
-	unk_728FD7C3 : 0x00000000,
-	
-	// mapped fnid 0x74311398
-	sys_prx_get_my_module_id : 0x00000000,
-	
-	// mapped fnid 0x744680A2
-	sys_initialize_tls : 0x00000000,
-	
-	// mapped fnid 0x7498887B
-	_sys_strchr : 0x00000000,
-	
-	// mapped fnid 0x750DD5CD
-	unk_750DD5CD : 0x00000000,
-	
-	// mapped fnid 0x791B9219
-	_sys_vsprintf : 0x00000000,
-	
-	// mapped fnid 0x7B034C78
-	unk_7B034C78 : 0x00000000,
-	
-	// mapped fnid 0x7DAFF8BB
-	unk_7DAFF8BB : 0x00000000,
-	
-	// mapped fnid 0x80FB0C19
-	sys_prx_stop_module : 0x00000000,
-	
-	// mapped fnid 0x8461E528
-	sys_time_get_system_time : 0x00000000,
-	
-	// mapped fnid 0x84BB6774
-	sys_prx_get_module_info : 0x00000000,
-	
-	// mapped fnid 0x87C87495
-	unk_87C87495 : 0x00000000,
-	
-	// mapped fnid 0x893305FA
-	sys_raw_spu_load : 0x00000000,
-	
-	// mapped fnid 0x8985B5B6
-	_sys_heap_stats : 0x00000000,
-	
-	// mapped fnid 0x8A2F159B
-	console_getc : 0x00000000,
-	
-	// mapped fnid 0x8A561D92
-	_sys_heap_free : 0x00000000,
-	
-	// mapped fnid 0x8BB03AB8
-	sys_game_board_storage_write : 0x00000000,
-	
-	// mapped fnid 0x8C2BB498
-	sys_spinlock_initialize : 0x00000000,
-	
-	// mapped fnid 0x8CFEF376
-	unk_8CFEF376 : 0x00000000,
-	
-	// mapped fnid 0x92A7EB40
-	unk_92A7EB40 : 0x00000000,
-	
-	// mapped fnid 0x96328741
-	_sys_process_at_Exitspawn : 0x00000000,
-	
-	// mapped fnid 0x996F7CF8
-	_sys_strncat : 0x00000000,
-	
-	// mapped fnid 0x99C88692
-	_sys_strcpy : 0x00000000,
-	
-	// mapped fnid 0x9C9605EE
-	unk_9C9605EE : 0x00000000,
-	
-	// mapped fnid 0x9D2EC4FF
-	unk_9D2EC4FF : 0x00000000,
-	
-	// mapped fnid 0x9D3C0F81
-	sys_mempool_destroy : 0x00000000,
-	
-	// mapped fnid 0x9E0623B5
-	sys_game_watchdog_start : 0x00000000,
-	
-	// mapped fnid 0x9F04F7AF
-	_sys_printf : 0x00000000,
-	
-	// mapped fnid 0x9F18429D
-	sys_prx_start_module : 0x00000000,
-	
-	// mapped fnid 0x9F950780
-	sys_game_get_rtc_status : 0x00000000,
-	
-	// mapped fnid 0x9FB6228E
-	unk_9FB6228E : 0x00000000,
-	
-	// mapped fnid 0xA146A143
-	sys_mempool_allocate_block : 0x00000000,
-	
-	// mapped fnid 0xA1F9EAFE
-	_sys_sprintf : 0x00000000,
-	
-	// mapped fnid 0xA285139D
-	sys_spinlock_lock : 0x00000000,
-	
-	// mapped fnid 0xA2C7BA64
-	sys_prx_exitspawn_with_level : 0x00000000,
-	
-	// mapped fnid 0xA330AD84
-	sys_prx_load_module_on_memcontainer_by_fd : 0x00000000,
-	
-	// mapped fnid 0xA3E3BE68
-	sys_ppu_thread_once : 0x00000000,
-	
-	// mapped fnid 0xA5D06BF0
-	sys_prx_get_module_list : 0x00000000,
-	
-	// mapped fnid 0xA9879A33
-	unk_A9879A33 : 0x00000000,
-	
-	// mapped fnid 0xAA6D9BFF
-	sys_prx_load_module_on_memcontainer : 0x00000000,
-	
-	// mapped fnid 0xAC6FC404
-	sys_ppu_thread_unregister_atexit : 0x00000000,
-	
-	// mapped fnid 0xACAD8FB6
-	sys_game_watchdog_clear : 0x00000000,
-	
-	// mapped fnid 0xAEB78725
-	sys_lwmutex_trylock : 0x00000000,
-	
-	// mapped fnid 0xAEDE4B03
-	_sys_heap_delete_heap : 0x00000000,
-	
-	// mapped fnid 0xAFF080A4
-	sys_ppu_thread_exit : 0x00000000,
-	
-	// mapped fnid 0xB1BD7A61
-	unk_B1BD7A61 : 0x00000000,
-	
-	// mapped fnid 0xB257540B
-	sys_mmapper_allocate_memory : 0x00000000,
-	
-	// mapped fnid 0xB27C8AE7
-	sys_prx_load_module_list : 0x00000000,
-	
-	// mapped fnid 0xB2FCF2C8
-	_sys_heap_create_heap : 0x00000000,
-	
-	// mapped fnid 0xB3BBCF2A
-	_sys_spu_printf_detach_thread : 0x00000000,
-	
-	// mapped fnid 0xB5D5F64E
-	unk_B5D5F64E : 0x00000000,
-	
-	// mapped fnid 0xB6369393
-	_sys_heap_get_total_free_size : 0x00000000,
-	
-	// mapped fnid 0xB995662E
-	sys_raw_spu_image_load : 0x00000000,
-	
-	// mapped fnid 0xB9BF1078
-	_sys_heap_alloc_heap_memory : 0x00000000,
-	
-	// mapped fnid 0xBAB62B99
-	unk_BAB62B99 : 0x00000000,
-	
-	// mapped fnid 0xBDB18F83
-	_sys_malloc : 0x00000000,
-	
-	// mapped fnid 0xBF8EE5BB
-	unk_BF8EE5BB : 0x00000000,
-	
-	// mapped fnid 0xC3476D0C
-	sys_lwmutex_destroy : 0x00000000,
-	
-	// mapped fnid 0xC4FD6121
-	_sys_qsort : 0x00000000,
-	
-	// mapped fnid 0xC839BB4C
-	unk_C839BB4C : 0x00000000,
-	
-	// mapped fnid 0xCA9A60BF
-	sys_mempool_create : 0x00000000,
-	
-	// mapped fnid 0xD0EA47A7
-	sys_prx_unregister_library : 0x00000000,
-	
-	// mapped fnid 0xD19688BC
-	unk_D19688BC : 0x00000000,
-	
-	// mapped fnid 0xD1AD4570
-	_sys_heap_get_mallinfo : 0x00000000,
-	
-	// mapped fnid 0xD3039D4D
-	_sys_strncpy : 0x00000000,
-	
-	// mapped fnid 0xD66C2D52
-	unk_D66C2D52 : 0x00000000,
-	
-	// mapped fnid 0xD8A6F882
-	unk_D8A6F882 : 0x00000000,
-	
-	// mapped fnid 0xDA0EB71A
-	sys_lwcond_create : 0x00000000,
-	
-	// mapped fnid 0xDB6B3250
-	sys_spu_elf_get_segments : 0x00000000,
-	
-	// mapped fnid 0xDC578057
-	sys_mmapper_map_memory : 0x00000000,
-	
-	// mapped fnid 0xDD0C1E09
-	_sys_spu_printf_attach_group : 0x00000000,
-	
-	// mapped fnid 0xDD3B27AC
-	_sys_spu_printf_finalize : 0x00000000,
-	
-	// mapped fnid 0xDE0C682C
-	unk_DE0C682C : 0x00000000,
-	
-	// mapped fnid 0xDE2F9C85
-	unk_DE2F9C85 : 0x00000000,
-	
-	// mapped fnid 0xE0998DBF
-	sys_prx_get_module_id_by_name : 0x00000000,
-	
-	// mapped fnid 0xE0DA8EFD
-	sys_spu_image_close : 0x00000000,
-	
-	// mapped fnid 0xE66BAC36
-	console_putc : 0x00000000,
-	
-	// mapped fnid 0xE6F2C1E7
-	sys_process_exit : 0x00000000,
-	
-	// mapped fnid 0xE75C40F2
-	unk_E75C40F2 : 0x00000000,
-	
-	// mapped fnid 0xE76964F5
-	sys_game_board_storage_read : 0x00000000,
-	
-	// mapped fnid 0xE7EF3A80
-	sys_prx_load_module_list_on_memcontainer : 0x00000000,
-	
-	// mapped fnid 0xE95FFA0A
-	unk_E95FFA0A : 0x00000000,
-	
-	// mapped fnid 0xE9A1BD84
-	sys_lwcond_signal_all : 0x00000000,
-	
-	// mapped fnid 0xEBE5F72F
-	sys_spu_image_import : 0x00000000,
-	
-	// mapped fnid 0xEDEA5F4A
-	unk_EDEA5F4A : 0x00000000,
-	
-	// mapped fnid 0xEEF75113
-	_sys_toupper : 0x00000000,
-	
-	// mapped fnid 0xEF68C17C
-	sys_prx_load_module_by_fd : 0x00000000,
-	
-	// mapped fnid 0xEF87A695
-	sys_lwcond_signal : 0x00000000,
-	
-	// mapped fnid 0xF0AECE0D
-	sys_prx_unload_module : 0x00000000,
-	
-	// mapped fnid 0xF57E1D6F
-	console_write : 0x00000000,
-	
-	// mapped fnid 0xF7F7FB20
-	_sys_free : 0x00000000,
-	
-	// mapped fnid 0xF82CF400
-	unk_F82CF400 : 0x00000000,
-	
-	// mapped fnid 0xF923DADA
-	unk_F923DADA : 0x00000000,
-	
-	// mapped fnid 0xFA7F693D
-	_sys_vprintf : 0x00000000,
-	
-	// mapped fnid 0xFB5DB080
-	_sys_memcmp : 0x00000000,
-	
-	// mapped fnid 0xFC52A7A9
-	sys_game_process_exitspawn : 0x00000000,
-	
-	// mapped fnid 0xFECC05B6
-	unk_FECC05B6 : 0x00000000,
-	
-	// mapped fnid 0xFF34C76C
-	unk_FF34C76C : 0x00000000
-}
-
-// System FileSystem Functions
-sys_fs_v481D =
-{
-	sys_io_lib_fnid_ptr: 0x0063F5D0, // ExportFNIDTable_sys_fs
-	sys_io_lib_func_ptr: 0x0063F7C4, // ExportStubTable_sys_fs
-	
-	// mapped fnid 0x02671310
-	cellFsSetDefaultContainer : 0x006FD240,
-
-	// mapped fnid 0x06E681ED
-	unk_6E681ED : 0x006FD180,
-
-	// mapped fnid 0x0CDA14BA
-	unk_CDA14BA : 0x006FD1B0,
-
-	// mapped fnid 0x0D5B4A14
-	cellFsReadWithOffset : 0x006FD278,
-
-	// mapped fnid 0x0E2939E5
-	cellFsFtruncate : 0x006FCEB0, // s64 cellFsFtruncate(Lv2FsFile fd, u64 size)
-
-	// mapped fnid 0x103B8632
-	cellFsAllocateFileAreaWithInitialData : 0x006FD160,
-
-	// mapped fnid 0x13BF1286
-	unk_13BF1286 : 0x006FD468,
-
-	// mapped fnid 0x14D58C7A
-	unk_14D58C7A : 0x006FD078,
-
-	// mapped fnid 0x18DD4604
-	unk_18DD4604 : 0x006FD210,
-
-	// mapped fnid 0x190912F6
-	cellFsStReadGetCurrentAddr : 0x006FD360,
-
-	// mapped fnid 0x1A108AB7
-	cellFsGetBlockSize : 0x006FD168,
-
-	// mapped fnid 0x1B0B915E
-	unk_1B0B915E : 0x006FCE80,
-
-	// mapped fnid 0x1CAEC657
-	unk_1CAEC657 : 0x006FD068,
-
-	// mapped fnid 0x1EA02E2F
-	cellFsArcadeHddSerialNumber : 0x006FD310,
-
-	// mapped fnid 0x1FF82B63
-	unk_1FF82B63 : 0x006FCE88,
-
-	// mapped fnid 0x226CD693
-	unk_226CD693 : 0x006FCE90,
-
-	// mapped fnid 0x24FA3BCC
-	unk_24FA3BCC : 0x006FD148,
-
-	// mapped fnid 0x2664C8AE
-	cellFsStReadInit : 0x006FD3A0,
-
-	// mapped fnid 0x27800C6B
-	cellFsStRead : 0x006FD368,
-
-	// mapped fnid 0x2796FDF3
-	cellFsRmdir : 0x006FD208, // s64 cellFsRmdir(const char* path)
-
-	// mapped fnid 0x2CB51F0D
-	cellFsClose : 0x006FCDE8, // s64 cellFsClose(Lv2FsFile fd)
-
-	// mapped fnid 0x2CF1296B
-	cellFsAllocateFileAreaByFdWithoutZeroFill : 0x006FD020,
-
-	// mapped fnid 0x3140F6E1
-	cellFsSetIoBuffer : 0x006FD250,
-
-	// mapped fnid 0x3394F037
-	cellFsAllocateFileAreaByFdWithInitialData : 0x006FCEA0,
-
-	// mapped fnid 0x37907F9F
-	unk_37907F9F : 0x006FD1B8,
-
-	// mapped fnid 0x384C65CF
-	unk_384C65CF : 0x006FD048,
-
-	// mapped fnid 0x3A1C8393
-	cellFsTruncate2 : 0x006FCEA8,
-
-	// mapped fnid 0x3AAA1BD0
-	unk_3AAA1BD0 : 0x006FD150,
-
-	// mapped fnid 0x3F61245C
-	cellFsOpendir : 0x006FCDF0, // s64 cellFsOpenDir(const char* path, Lv2FsFile* fd)
-
-	// mapped fnid 0x445C878F
-	unk_445C878F : 0x006FD2D0,
-
-	// mapped fnid 0x4BD5073A
-	unk_4BD5073A : 0x006FD1D8,
-
-	// mapped fnid 0x4CEF342E
-	cellFsAioWrite : 0x006FD3C8,
-
-	// mapped fnid 0x4D5FF8E2
-	cellFsRead : 0x006FCDD8, // s64 cellFsRead(Lv2FsFile fd, void* buf, u64 size, u64* read)
-
-	// mapped fnid 0x5731DF45
-	unk_5731DF45 : 0x006FD320,
-
-	// mapped fnid 0x5C74903D
-	cellFsReaddir : 0x006FCDF8, // s64 cellFsReadDir(Lv2FsFile fd, Lv2FsDirent* entry, u64* read)
-
-	// mapped fnid 0x606F9F42
-	cellFsChangeFileSizeWithoutAllocation : 0x006FD218,
-
-	// mapped fnid 0x6A4B95C1
-	unk_6A4B95C1 : 0x006FD050,
-
-	// mapped fnid 0x6AE0BA7F
-	unk_6AE0BA7F : 0x006FCE30,
-
-	// mapped fnid 0x6C815943
-	unk_6C815943 : 0x006FCE78,
-
-	// mapped fnid 0x6D3BB15B
-	cellFsSdataOpenByFd : 0x006FD2C0,
-
-	// mapped fnid 0x718BF5F8
-	cellFsOpen : 0x006FD1F0, // s64 cellFsOpen(const char* path, s32 oflags, Lv2FsFile* fd, u32 mode, const void* arg, u64 argsize)
-
-	// mapped fnid 0x75F16DC5
-	cellFsSetIoBufferFromDefaultContainer : 0x006FD258,
-
-	// mapped fnid 0x7A0329A1
-	cellFsAllocateFileAreaWithoutZeroFill : 0x006FD220,
-
-	// mapped fnid 0x7DBB9A4D
-	unk_7DBB9A4D : 0x006FD1D0,
-
-	// mapped fnid 0x7DE6DCED
-	cellFsStat : 0x006FD128, // s64 cellFsStat(const char* path, Lv2FsStat* buf)
-
-	// mapped fnid 0x7F13FC8C
-	cellFsAioCancel : 0x006FD3C0,
-
-	// mapped fnid 0x7F4677A8
-	cellFsUnlink : 0x006FD200, // s64 cellFsUnlink(const char* path)
-
-	// mapped fnid 0x81F33783
-	cellFsStReadPutCurrentAddr : 0x006FD358,
-
-	// mapped fnid 0x842E7E06
-	unk_842E7E06 : 0x006FD190,
-
-	// mapped fnid 0x866F6AEC
-	cellFsStReadWaitCallback : 0x006FD348,
-
-	// mapped fnid 0x8CB722D5
-	cellFsWriteWithOffset : 0x006FD288,
-
-	// mapped fnid 0x8DCFF2CD
-	unk_8DCFF2CD : 0x006FD178,
-
-	// mapped fnid 0x8DF28FF9
-	cellFsStReadStart : 0x006FD378,
-
-	// mapped fnid 0x8F71C5B2
-	cellFsStReadWait : 0x006FD350,
-
-	// mapped fnid 0x91A1BEAA
-	cellFsSetDiscReadRetrySetting : 0x006FD328,
-
-	// mapped fnid 0x91D59F69
-	unk_91D59F69 : 0x006FCF20,
-
-	// mapped fnid 0x964DB398
-	unk_964DB398 : 0x006FD0F8,
-
-	// mapped fnid 0x967A162B
-	cellFsFsync : 0x006FCE48, // s64 cellFsFsync(Lv2FsFile fd)
-
-	// mapped fnid 0x99406D0B
-	cellFsChmod : 0x006FD140, // s64 cellFsChmod(const char* path, Lv2FsMode mode)
-
-	// mapped fnid 0x9B882495
-	cellFsGetDirectoryEntries : 0x006FD088,
-
-	// mapped fnid 0x9F951810
-	cellFsAioFinish : 0x006FD3D8,
-
-	// mapped fnid 0x9FDBBA89
-	unk_9FDBBA89 : 0x006FD330,
-
-	// mapped fnid 0xA01EE33A
-	cellFsRegisterConversionCallback : 0x006FD120,
-
-	// mapped fnid 0xA397D042
-	cellFsLseek : 0x006FCE38,
-
-	// mapped fnid 0xAA3B4BCD
-	cellFsGetFreeSize : 0x006FD170,
-
-	// mapped fnid 0xADDF33CD
-	unk_ADDF33CD : 0x006FD1C0,
-
-	// mapped fnid 0xAE4A225E
-	unk_AE4A225E : 0x006FD1C8,
-
-	// mapped fnid 0xB1840B53
-	cellFsSdataOpen : 0x006FD2A0,
-
-	// mapped fnid 0xB3AFEE8B
-	cellFsStReadGetRingBuf : 0x006FD390,
-
-	// mapped fnid 0xBA901FE6
-	cellFsMkdir : 0x006FD1A8,
-
-	// mapped fnid 0xBD273A88
-	cellFsStReadGetRegid : 0x006FD380,
-
-	// mapped fnid 0xBEF554A4
-	cellFsUtime : 0x006FD1A0,
-
-	// mapped fnid 0xC1C507E7
-	cellFsAioRead : 0x006FD3D0,
-
-	// mapped fnid 0xC85C4DE7
-	unk_C85C4DE7 : 0x006FD130,
-
-	// mapped fnid 0xC9DC3AC5
-	cellFsTruncate : 0x006FD198,
-
-	// mapped fnid 0xCB588DBA
-	cellFsFGetBlockSize : 0x006FCE50,
-
-	// mapped fnid 0xCBF1758B
-	unk_CBF1758B : 0x006FD158,
-
-	// mapped fnid 0xCF34969C
-	cellFsStReadGetStatus : 0x006FD388,
-
-	// mapped fnid 0xD338A65A
-	unk_D338A65A : 0x006FCE40,
-
-	// mapped fnid 0xD73938DF
-	cellFsStReadFinish : 0x006FD398,
-
-	// mapped fnid 0xDB869F20
-	cellFsAioInit : 0x006FD3E0,
-
-	// mapped fnid 0xE15939C3
-	cellFsChangeFileSizeByFdWithoutAllocation : 0x006FD018,
-
-	// mapped fnid 0xE3D28395
-	unk_E3D28395 : 0x006FD1F8,
-
-	// mapped fnid 0xE44827ED
-	unk_E44827ED : 0x006FD188,
-
-	// mapped fnid 0xECDCF2AB
-	cellFsWrite : 0x006FCDE0, // s64 cellFsWrite(Lv2FsFile fd, const void* buf, u64 size, u64* written)
-
-	// mapped fnid 0xEF3EFA34
-	cellFsFstat : 0x006FCE08, // s64 cellFsFstat(Lv2FsFile fd, Lv2FsStat* buf)
-
-	// mapped fnid 0xF0A73832
-	unk_F0A73832 : 0x006FD070,
-
-	// mapped fnid 0xF12EECC8
-	cellFsRename : 0x006FD1E0,
-
-	// mapped fnid 0xF44C0E1D
-	unk_F44C0E1D : 0x006FD138,
-
-	// mapped fnid 0xF8E5D9A0
-	cellFsStReadStop : 0x006FD370,
-
-	// mapped fnid 0xF94BAA80
-	cellFsUnregisterL10nCallbacks : 0x006FD118,
-
-	// mapped fnid 0xFF29F478
-	unk_FF29F478 : 0x006FD1E8,
-
-	// mapped fnid 0xFF42DCC3
-	cellFsClosedir : 0x006FCE00 // s64 cellFsCloseDir(Lv2FsFile fd)
-}
-
-// System IO Functions
-sys_io_v481D =
-{
-	sys_io_lib_fnid_ptr: 0x0063F3E0, // ExportFNIDTable_sys_io
-	sys_io_lib_func_ptr: 0x0063F4E4, // ExportStubTable_sys_io
-	
-	// mapped fnid 0x068FCBC6
-	sys_config_start : 0x006FCA70,
-
-	// mapped fnid 0x0D5F2C14
-	cellPadClearBuf : 0x006FCB48,
-
-	// mapped fnid 0x0E2DFAAD
-	cellPadInfoPressMode : 0x006FCB18,
-
-	// mapped fnid 0x10DA8DCC
-	unk_10DA8DCC : 0x006FCAC8,
-
-	// mapped fnid 0x13ED2BA4
-	unk_13ED2BA4 : 0x006FCB28,
-
-	// mapped fnid 0x1CF98800
-	cellPadInit : 0x006FCB58,
-
-	// mapped fnid 0x1F71ECBE
-	cellKbGetConfiguration : 0x006FCB88,
-
-	// mapped fnid 0x2073B7F6
-	cellKbClearBuf : 0x006FCBC0,
-
-	// mapped fnid 0x20A97BA2
-	cellPadLddRegisterController : 0x006FCAE8,
-
-	// mapped fnid 0x21A62E9B
-	cellMouseGetTabletDataList : 0x006FCC00,
-
-	// mapped fnid 0x2D16DA4F
-	cellMouseSetTabletMode : 0x006FCBF0,
-
-	// mapped fnid 0x2F1774D5
-	cellKbGetInfo : 0x006FCBB8,
-
-	// mapped fnid 0x3138E632
-	cellMouseGetData : 0x006FCC10,
-
-	// mapped fnid 0x3733EA3C
-	unk_3733EA3C : 0x006FCAB8,
-
-	// mapped fnid 0x3AAAD464
-	cellPadGetInfo : 0x006FCB40,
-
-	// mapped fnid 0x3EF66B95
-	cellMouseClearBuf : 0x006FCC28,
-
-	// mapped fnid 0x3F72C56E
-	cellKbSetLEDStatus : 0x006FCB90,
-
-	// mapped fnid 0x3F797DFF
-	cellPadGetRawData : 0x006FCB38,
-
-	// mapped fnid 0x433F6EC0
-	cellKbInit : 0x006FCBD0,
-
-	// mapped fnid 0x4AB1FA77
-	cellKbInit : 0x006FCBA8,
-
-	// mapped fnid 0x4CC9B68D
-	cellMouseGetTabletDataList : 0x006FCA90,
-
-	// mapped fnid 0x4D0B3B1F
-	cellMouseInfoTabletMode : 0x006FCBF8,
-
-	// mapped fnid 0x4D9B75D5
-	cellPadEnd : 0x006FCB50,
-
-	// mapped fnid 0x578E3C98
-	cellPadSetPortSetting : 0x006FCA98,
-
-	// mapped fnid 0x5BAF30FB
-	cellMouseGetInfo : 0x006FCC20,
-
-	// mapped fnid 0x5C016E79
-	unk_5C016E79 : 0x006FCAD0,
-
-	// mapped fnid 0x5F81900C
-	sys_config_unregister_service : 0x006FCA48,
-
-	// mapped fnid 0x662BB2AD
-	unk_662BB2AD : 0x006FCA40,
-
-	// mapped fnid 0x6AE10596
-	sys_config_add_service_listener : 0x006FCA60,
-
-	// mapped fnid 0x6BC09C61
-	cellPadGetDataExtra : 0x006FCAB0,
-
-	// mapped fnid 0x6BD131F0
-	cellMouseGetDataList : 0x006FCC08,
-
-	// mapped fnid 0x6D367953
-	sys_config_stop : 0x006FCA68,
-
-	// mapped fnid 0x7009B738
-	unk_7009B738 : 0x006FCB00,
-
-	// mapped fnid 0x73BB2D74
-	cellPadSetSensorMode : 0x006FCAE0,
-
-	// mapped fnid 0x78200559
-	cellPadInfoSensorMode : 0x006FCB08,
-
-	// mapped fnid 0x78F058A2
-	sys_config_register_service : 0x006FCA50,
-
-	// mapped fnid 0x8A00F264
-	cellPadPeriphGetData : 0x006FCA88,
-
-	// mapped fnid 0x8B72CDA1
-	cellPadGetData : 0x006FCB30,
-
-	// mapped fnid 0x8B8231E5
-	cellPadLddGetPortNo : 0x006FCAD8,
-
-	// mapped fnid 0x8E06D13B
-	unk_8E06D13B : 0x006FCA38,
-
-	// mapped fnid 0xA328CC35
-	cellMouseGetRawData : 0x006FCC18,
-
-	// mapped fnid 0xA5F85E4D
-	cellKbSetCodeType : 0x006FCBA0,
-
-	// mapped fnid 0xA703A51D
-	cellPadGetInfo2 : 0x006FCAA0,
-
-	// mapped fnid 0xBAFD6409
-	cellPadLddDataInsert : 0x006FCAF0,
-
-	// mapped fnid 0xBE5BE3BA
-	cellPadSetSensorMode : 0x006FCB10,
-
-	// mapped fnid 0xBFCE3285
-	cellKbEnd : 0x006FCBC8,
-
-	// mapped fnid 0xC9030138
-	cellMouseInit : 0x006FCC38,
-
-	// mapped fnid 0xCCC785DF
-	unk_CCC785DF : 0x006FCBE8,
-
-	// mapped fnid 0xDBF4C59C
-	unk_DBF4C59C : 0x006FCAC0,
-
-	// mapped fnid 0xDEEFDFA7
-	cellKbSetReadMode : 0x006FCB98,
-
-	// mapped fnid 0xE10183CE
-	cellMouseEnd : 0x006FCC30,
-
-	// mapped fnid 0xE442FAA8
-	cellPadLddUnregisterController : 0x006FCAF8,
-
-	// mapped fnid 0xE5E139DD
-	unk_E5E139DD : 0x006FCA80,
-
-	// mapped fnid 0xF5D9D571
-	sys_config_remove_service_listener : 0x006FCA58,
-
-	// mapped fnid 0xF65544EE
-	cellPadSetActDirect : 0x006FCAA8,
-
-	// mapped fnid 0xF83F8182
-	cellPadSetPressMode : 0x006FCB20,
-
-	// mapped fnid 0xFF0A21B7
-	cellKbRead : 0x006FCBB0
-}
-
 // Standard C Functions
 stdc_v481D =
 {
@@ -1889,6 +935,960 @@ stdc_v481D =
 
 	// mapped fnid 0xFE88E97E
 	fscanf : 0x006FC080
+}
+
+
+// System Console ID Functions
+sysConsoleId_v481D =
+{
+	lib_fnid_ptr: 0x0063F3D0, // ExportFNIDTable_sysConsoleId
+	lib_func_ptr: 0x0063F3D4, // ExportStubTable_sysConsoleId
+	
+	// mapped fnid 0xF220F751
+	sysConsoleId : 0x006FC6A0,
+}
+
+
+// System PRX For User Functions
+sysPrxForUser_v481D =
+{
+	lib_fnid_ptr: 0x0063EE1C, // ExportFNIDTable_sysPrxForUser
+	lib_func_ptr: 0x0063F114, // ExportStubTable_sysPrxForUser
+	
+	// mapped fnid 0x2E20EC1
+	unk_2E20EC1 : 0x00000000,
+	
+	// mapped fnid 0x341BB97
+	sys_prx_get_module_id_by_address : 0x006FC928,
+	
+	// mapped fnid 0x4E83D2C
+	 _sys_strncmp : 0x006FC888,
+	
+	// mapped fnid 0x52D29A6
+	_sys_strcat : 0x006FC858,
+	
+	// mapped fnid 0x5C65656
+	sys_mempool_try_allocate_block : 0x006FC568,
+	
+	// mapped fnid 0x618936B
+	_sys_vsnprintf : 0x006FC838,
+	
+	// mapped fnid 0x6574237
+	_sys_snprintf : 0x006FC848,
+	
+	// mapped fnid 0x94FF0D1
+	unk_94FF0D1 : 0x006FCA30,
+	
+	// mapped fnid 0xFB028AF
+	unk_FB028AF : 0x006FC740,
+	
+	// mapped fnid 0x121E5DA5
+	unk_121E5DA5 : 0x006FC4D0,
+	
+	// mapped fnid 0x1573DC3F
+	sys_lwmutex_lock : 0x006FC618,
+	
+	// mapped fnid 0x191F0C4A
+	_sys_strrchr : 0x006FC898,
+	
+	// mapped fnid 0x1AE10B92
+	_sys_spu_printf_attach_thread : 0x006FC6E8,
+	
+	// mapped fnid 0x1BC200F4
+	sys_lwmutex_unlock : 0x006FC608,
+	
+	// mapped fnid 0x1C9A942C
+	sys_lwcond_destroy : 0x006FC650,
+	
+	// mapped fnid 0x1CA525A2
+	_sys_strncasecmp : 0x006FC880,
+	
+	// mapped fnid 0x1ED454CE
+	sys_spu_elf_get_information : 0x006FC588,
+	
+	// mapped fnid 0x24A1EA07
+	sys_ppu_thread_create : 0x006FC5E0,
+	
+	// mapped fnid 0x25062C8E
+	unk_25062C8E : 0x006FC530,
+	
+	// mapped fnid 0x25596F51
+	sys_mempool_get_count : 0x006FC558,
+	
+	// mapped fnid 0x26090058
+	sys_prx_load_module : 0x006FC930,
+	
+	// mapped fnid 0x27427742
+	_sys_memmove : 0x006FC808,
+	
+	// mapped fnid 0x2A6D9D51
+	sys_lwcond_wait : 0x006FC660,
+	
+	// mapped fnid 0x2C847572
+	_sys_process_atexitspawn : 0x006FC500,
+	
+	// mapped fnid 0x2D36462B
+	_sys_strlen : 0x006FC878,
+	
+	// mapped fnid 0x2F256B29
+	unk_2F256B29 : 0x006FC9F8,
+	
+	// mapped fnid 0x2F85C0EF
+	sys_lwmutex_create : 0x006FC5F8,
+	
+	// mapped fnid 0x3172759D
+	sys_game_get_temperature : 0x006FC780,
+	
+	// mapped fnid 0x318F17E1
+	_sys_memalign : 0x006FC8B0,
+	
+	// mapped fnid 0x350D454E
+	sys_ppu_thread_get_id : 0x006FC5F0,
+	
+	// mapped fnid 0x35168520
+	_sys_heap_malloc : 0x006FC7B0,
+	
+	// mapped fnid 0x39E9B068
+	unk_39E9B068 : 0x006FCA00,
+	
+	// mapped fnid 0x3BD53C7B
+	_sys_memchr : 0x006FC7F8,
+	
+	// mapped fnid 0x3DD4A957
+	sys_ppu_thread_register_atexit : 0x006FC5C8,
+	
+	// mapped fnid 0x3EF17F8C
+	unk_3EF17F8C : 0x006FC7D8,
+	
+	// mapped fnid 0x409AD939
+	sys_mmapper_free_memory : 0x006FC700,
+	
+	// mapped fnid 0x4232B0DB
+	unk_4232B0DB : 0x006FC818,
+	
+	// mapped fnid 0x42B23552
+	sys_prx_register_library : 0x006FC908,
+	
+	// mapped fnid 0x44265C08
+	_sys_heap_memalign : 0x006FC7C0,
+	
+	// mapped fnid 0x459B4393
+	_sys_strcmp : 0x006FC868,
+	
+	// mapped fnid 0x45FE2FCE
+	_sys_spu_printf_initialize : 0x006FC6C8,
+	
+	// mapped fnid 0x4643BA6E
+	sys_mmapper_unmap_memory : 0x006FC710,
+	
+	// mapped fnid 0x4A071D98
+	sys_interrupt_thread_disestablish : 0x006FC5D8,
+	
+	// mapped fnid 0x4B2F301A
+	_sys_tolower : 0x006FC7E0,
+	
+	// mapped fnid 0x4BBF59D0
+	unk_4BBF59D0 : 0x006FC9E0,
+	
+	// mapped fnid 0x4F7172C9
+	sys_process_is_stack : 0x006FC4A0,
+	
+	// mapped fnid 0x5267CB35
+	sys_spinlock_unlock : 0x006FC6C0,
+	
+	// mapped fnid 0x52AADADF
+	sys_lwcond_signal_to : 0x006FC670,
+	
+	// mapped fnid 0x5FDFB2FE
+	_sys_spu_printf_detach_group : 0x006FC6E0,
+	
+	// mapped fnid 0x608212FC
+	sys_mempool_free_block : 0x006FC570,
+	
+	// mapped fnid 0x620E35A7
+	sys_game_get_system_sw_version : 0x006FC760,
+	
+	// mapped fnid 0x637BDAAE
+	unk_637BDAAE : 0x006FC4B0,
+	
+	// mapped fnid 0x67F9FEDB
+	sys_game_process_exitspawn2 : 0x006FC510,
+	
+	// mapped fnid 0x68B9B011
+	_sys_memset : 0x006FC810,
+	
+	// mapped fnid 0x6BF66EA7
+	_sys_memcpy : 0x006FC800,
+	
+	// mapped fnid 0x6E05231D
+	sys_game_watchdog_stop : 0x006FC750,
+	
+	// mapped fnid 0x70258515
+	sys_mmapper_allocate_memory_from_container : 0x006FC738,
+	
+	// mapped fnid 0x71A8472A
+	sys_get_random_number : 0x006FC698,
+	
+	// mapped fnid 0x722A0254
+	sys_spinlock_trylock : 0x006FC6B8,
+	
+	// mapped fnid 0x728FD7C3
+	unk_728FD7C3 : 0x006FC548,
+	
+	// mapped fnid 0x74311398
+	sys_prx_get_my_module_id : 0x006FC918,
+	
+	// mapped fnid 0x744680A2
+	sys_initialize_tls : 0x006FC5B8,
+	
+	// mapped fnid 0x7498887B
+	_sys_strchr : 0x006FC860,
+	
+	// mapped fnid 0x750DD5CD
+	unk_750DD5CD : 0x006FC528,
+	
+	// mapped fnid 0x791B9219
+	_sys_vsprintf : 0x006FC840,
+	
+	// mapped fnid 0x7B034C78
+	unk_7B034C78 : 0x006FCA18,
+	
+	// mapped fnid 0x7DAFF8BB
+	unk_7DAFF8BB : 0x006FC540,
+	
+	// mapped fnid 0x80FB0C19
+	sys_prx_stop_module : 0x006FC910,
+	
+	// mapped fnid 0x8461E528
+	sys_time_get_system_time : 0x006FC620,
+	
+	// mapped fnid 0x84BB6774
+	sys_prx_get_module_info : 0x006FC8E8,
+	
+	// mapped fnid 0x87C87495
+	unk_87C87495 : 0x006FC9F0,
+	
+	// mapped fnid 0x893305FA
+	sys_raw_spu_load : 0x006FC598,
+	
+	// mapped fnid 0x8985B5B6
+	_sys_heap_stats : 0x006FC790,
+	
+	// mapped fnid 0x8A2F159B
+	console_getc : 0x006FC630,
+	
+	// mapped fnid 0x8A561D92
+	_sys_heap_free : 0x006FC7A8,
+	
+	// mapped fnid 0x8BB03AB8
+	sys_game_board_storage_write : 0x006FC778,
+	
+	// mapped fnid 0x8C2BB498
+	sys_spinlock_initialize : 0x006FC6A8,
+	
+	// mapped fnid 0x8CFEF376
+	unk_8CFEF376 : 0x006FC900,
+	
+	// mapped fnid 0x92A7EB40
+	unk_92A7EB40 : 0x006FC4A8,
+	
+	// mapped fnid 0x96328741
+	_sys_process_at_Exitspawn : 0x006FC508,
+	
+	// mapped fnid 0x996F7CF8
+	_sys_strncat : 0x006FC788,
+	
+	// mapped fnid 0x99C88692
+	_sys_strcpy : 0x006FC870,
+	
+	// mapped fnid 0x9C9605EE
+	unk_9C9605EE : 0x006FCA20,
+	
+	// mapped fnid 0x9D2EC4FF
+	unk_9D2EC4FF : 0x006FC4E8,
+	
+	// mapped fnid 0x9D3C0F81
+	sys_mempool_destroy : 0x006FC578,
+	
+	// mapped fnid 0x9E0623B5
+	sys_game_watchdog_start : 0x006FC748,
+	
+	// mapped fnid 0x9F04F7AF
+	_sys_printf : 0x006FC8E0,
+	
+	// mapped fnid 0x9F18429D
+	sys_prx_start_module : 0x006FC950,
+	
+	// mapped fnid 0x9F950780
+	sys_game_get_rtc_status : 0x006FC768,
+	
+	// mapped fnid 0x9FB6228E
+	unk_9FB6228E : 0x006FC820,
+	
+	// mapped fnid 0xA146A143
+	sys_mempool_allocate_block : 0x006FC560,
+	
+	// mapped fnid 0xA1F9EAFE
+	_sys_sprintf : 0x006FC850,
+	
+	// mapped fnid 0xA285139D
+	sys_spinlock_lock : 0x006FC6B0,
+	
+	// mapped fnid 0xA2C7BA64
+	sys_prx_exitspawn_with_level : 0x006FC940,
+	
+	// mapped fnid 0xA330AD84
+	sys_prx_load_module_on_memcontainer_by_fd : 0x006FC968,
+	
+	// mapped fnid 0xA3E3BE68
+	sys_ppu_thread_once : 0x006FC5D0,
+	
+	// mapped fnid 0xA5D06BF0
+	sys_prx_get_module_list : 0x006FC920,
+	
+	// mapped fnid 0xA9879A33
+	unk_A9879A33 : 0x006FCA08,
+	
+	// mapped fnid 0xAA6D9BFF
+	sys_prx_load_module_on_memcontainer : 0x006FC968,
+	
+	// mapped fnid 0xAC6FC404
+	sys_ppu_thread_unregister_atexit : 0x006FC5C0,
+	
+	// mapped fnid 0xACAD8FB6
+	sys_game_watchdog_clear : 0x006FC758,
+	
+	// mapped fnid 0xAEB78725
+	sys_lwmutex_trylock : 0x006FC600,
+	
+	// mapped fnid 0xAEDE4B03
+	_sys_heap_delete_heap : 0x006FC7D0,
+	
+	// mapped fnid 0xAFF080A4
+	sys_ppu_thread_exit : 0x006FC5E8,
+	
+	// mapped fnid 0xB1BD7A61
+	unk_B1BD7A61 : 0x006FCA10,
+	
+	// mapped fnid 0xB257540B
+	sys_mmapper_allocate_memory : 0x006FC6F8,
+	
+	// mapped fnid 0xB27C8AE7
+	sys_prx_load_module_list : 0x006FC958,
+	
+	// mapped fnid 0xB2FCF2C8
+	_sys_heap_create_heap : 0x006FC7C8,
+	
+	// mapped fnid 0xB3BBCF2A
+	_sys_spu_printf_detach_thread : 0x006FC6F0,
+	
+	// mapped fnid 0xB5D5F64E
+	unk_B5D5F64E : 0x006FC640,
+	
+	// mapped fnid 0xB6369393
+	_sys_heap_get_total_free_size : 0x006FC7A0,
+	
+	// mapped fnid 0xB995662E
+	sys_raw_spu_image_load : 0x006FC590,
+	
+	// mapped fnid 0xB9BF1078
+	_sys_heap_alloc_heap_memory : 0x006FC7B8,
+	
+	// mapped fnid 0xBAB62B99
+	unk_BAB62B99 : 0x006FC520,
+	
+	// mapped fnid 0xBDB18F83
+	_sys_malloc : 0x006FC8B8,
+	
+	// mapped fnid 0xBF8EE5BB
+	unk_BF8EE5BB : 0x006FC4C0,
+	
+	// mapped fnid 0xC3476D0C
+	sys_lwmutex_destroy : 0x006FC610,
+	
+	// mapped fnid 0xC4FD6121
+	_sys_qsort : 0x006FC8A0,
+	
+	// mapped fnid 0xC839BB4C
+	unk_C839BB4C : 0x006FC9E8,
+	
+	// mapped fnid 0xCA9A60BF
+	sys_mempool_create : 0x006FC550,
+	
+	// mapped fnid 0xD0EA47A7
+	sys_prx_unregister_library : 0x006FC938,
+	
+	// mapped fnid 0xD19688BC
+	unk_D19688BC : 0x006FC4D8,
+	
+	// mapped fnid 0xD1AD4570
+	_sys_heap_get_mallinfo : 0x006FC798,
+	
+	// mapped fnid 0xD3039D4D
+	_sys_strncpy : 0x006FC890,
+	
+	// mapped fnid 0xD66C2D52
+	unk_D66C2D52 : 0x006FC728,
+	
+	// mapped fnid 0xD8A6F882
+	unk_D8A6F882 : 0x006FC730,
+	
+	// mapped fnid 0xDA0EB71A
+	sys_lwcond_create : 0x006FC658,
+	
+	// mapped fnid 0xDB6B3250
+	sys_spu_elf_get_segments : 0x006FC580,
+	
+	// mapped fnid 0xDC578057
+	sys_mmapper_map_memory : 0x006FC708,
+	
+	// mapped fnid 0xDD0C1E09
+	_sys_spu_printf_attach_group : 0x006FC6D8,
+	
+	// mapped fnid 0xDD3B27AC
+	_sys_spu_printf_finalize : 0x006FC6D0,
+	
+	// mapped fnid 0xDE0C682C
+	unk_DE0C682C : 0x006FC718,
+	
+	// mapped fnid 0xDE2F9C85
+	unk_DE2F9C85 : 0x006FC4F0,
+	
+	// mapped fnid 0xE0998DBF
+	sys_prx_get_module_id_by_name : 0x006FC8F0,
+	
+	// mapped fnid 0xE0DA8EFD
+	sys_spu_image_close : 0x006FC5A0,
+	
+	// mapped fnid 0xE66BAC36
+	console_putc : 0x006FC638,
+	
+	// mapped fnid 0xE6F2C1E7
+	sys_process_exit : 0x006FC4F8,
+	
+	// mapped fnid 0xE75C40F2
+	unk_E75C40F2 : 0x006FC4C8,
+	
+	// mapped fnid 0xE76964F5
+	sys_game_board_storage_read : 0x006FC770,
+	
+	// mapped fnid 0xE7EF3A80
+	sys_prx_load_module_list_on_memcontainer : 0x006FC958,
+	
+	// mapped fnid 0xE95FFA0A
+	unk_E95FFA0A : 0x006FC538,
+	
+	// mapped fnid 0xE9A1BD84
+	sys_lwcond_signal_all : 0x006FC678,
+	
+	// mapped fnid 0xEBE5F72F
+	sys_spu_image_import : 0x006FC5A8,
+	
+	// mapped fnid 0xEDEA5F4A
+	unk_EDEA5F4A : 0x006FC4E0,
+	
+	// mapped fnid 0xEEF75113
+	_sys_toupper : 0x006FC7E8,
+	
+	// mapped fnid 0xEF68C17C
+	sys_prx_load_module_by_fd : 0x006FC970,
+	
+	// mapped fnid 0xEF87A695
+	sys_lwcond_signal : 0x006FC668,
+	
+	// mapped fnid 0xF0AECE0D
+	sys_prx_unload_module : 0x006FC948,
+	
+	// mapped fnid 0xF57E1D6F
+	console_write : 0x006FC628,
+	
+	// mapped fnid 0xF7F7FB20
+	_sys_free : 0x006FC8A8,
+	
+	// mapped fnid 0xF82CF400
+	unk_F82CF400 : 0x006FC720,
+	
+	// mapped fnid 0xF923DADA
+	unk_F923DADA : 0x006FC4B8,
+	
+	// mapped fnid 0xFA7F693D
+	_sys_vprintf : 0x006FC8D0,
+	
+	// mapped fnid 0xFB5DB080
+	_sys_memcmp : 0x006FC7F0,
+	
+	// mapped fnid 0xFC52A7A9
+	sys_game_process_exitspawn : 0x006FC510,
+	
+	// mapped fnid 0xFECC05B6
+	unk_FECC05B6 : 0x006FC8C8,
+	
+	// mapped fnid 0xFF34C76C
+	unk_FF34C76C : 0x006FCA28
+}
+
+// System FileSystem Functions
+sys_fs_v481D =
+{
+	sys_io_lib_fnid_ptr: 0x0063F5D0, // ExportFNIDTable_sys_fs
+	sys_io_lib_func_ptr: 0x0063F7C4, // ExportStubTable_sys_fs
+	
+	// mapped fnid 0x02671310
+	cellFsSetDefaultContainer : 0x006FD240,
+
+	// mapped fnid 0x06E681ED
+	unk_6E681ED : 0x006FD180,
+
+	// mapped fnid 0x0CDA14BA
+	unk_CDA14BA : 0x006FD1B0,
+
+	// mapped fnid 0x0D5B4A14
+	cellFsReadWithOffset : 0x006FD278,
+
+	// mapped fnid 0x0E2939E5
+	cellFsFtruncate : 0x006FCEB0, // s64 cellFsFtruncate(Lv2FsFile fd, u64 size)
+
+	// mapped fnid 0x103B8632
+	cellFsAllocateFileAreaWithInitialData : 0x006FD160,
+
+	// mapped fnid 0x13BF1286
+	unk_13BF1286 : 0x006FD468,
+
+	// mapped fnid 0x14D58C7A
+	unk_14D58C7A : 0x006FD078,
+
+	// mapped fnid 0x18DD4604
+	unk_18DD4604 : 0x006FD210,
+
+	// mapped fnid 0x190912F6
+	cellFsStReadGetCurrentAddr : 0x006FD360,
+
+	// mapped fnid 0x1A108AB7
+	cellFsGetBlockSize : 0x006FD168,
+
+	// mapped fnid 0x1B0B915E
+	unk_1B0B915E : 0x006FCE80,
+
+	// mapped fnid 0x1CAEC657
+	unk_1CAEC657 : 0x006FD068,
+
+	// mapped fnid 0x1EA02E2F
+	cellFsArcadeHddSerialNumber : 0x006FD310,
+
+	// mapped fnid 0x1FF82B63
+	unk_1FF82B63 : 0x006FCE88,
+
+	// mapped fnid 0x226CD693
+	unk_226CD693 : 0x006FCE90,
+
+	// mapped fnid 0x24FA3BCC
+	unk_24FA3BCC : 0x006FD148,
+
+	// mapped fnid 0x2664C8AE
+	cellFsStReadInit : 0x006FD3A0,
+
+	// mapped fnid 0x27800C6B
+	cellFsStRead : 0x006FD368,
+
+	// mapped fnid 0x2796FDF3
+	cellFsRmdir : 0x006FD208, // s64 cellFsRmdir(const char* path)
+
+	// mapped fnid 0x2CB51F0D
+	cellFsClose : 0x006FCDE8, // s64 cellFsClose(Lv2FsFile fd)
+
+	// mapped fnid 0x2CF1296B
+	cellFsAllocateFileAreaByFdWithoutZeroFill : 0x006FD020,
+
+	// mapped fnid 0x3140F6E1
+	cellFsSetIoBuffer : 0x006FD250,
+
+	// mapped fnid 0x3394F037
+	cellFsAllocateFileAreaByFdWithInitialData : 0x006FCEA0,
+
+	// mapped fnid 0x37907F9F
+	unk_37907F9F : 0x006FD1B8,
+
+	// mapped fnid 0x384C65CF
+	unk_384C65CF : 0x006FD048,
+
+	// mapped fnid 0x3A1C8393
+	cellFsTruncate2 : 0x006FCEA8,
+
+	// mapped fnid 0x3AAA1BD0
+	unk_3AAA1BD0 : 0x006FD150,
+
+	// mapped fnid 0x3F61245C
+	cellFsOpendir : 0x006FCDF0, // s64 cellFsOpenDir(const char* path, Lv2FsFile* fd)
+
+	// mapped fnid 0x445C878F
+	unk_445C878F : 0x006FD2D0,
+
+	// mapped fnid 0x4BD5073A
+	unk_4BD5073A : 0x006FD1D8,
+
+	// mapped fnid 0x4CEF342E
+	cellFsAioWrite : 0x006FD3C8,
+
+	// mapped fnid 0x4D5FF8E2
+	cellFsRead : 0x006FCDD8, // s64 cellFsRead(Lv2FsFile fd, void* buf, u64 size, u64* read)
+
+	// mapped fnid 0x5731DF45
+	unk_5731DF45 : 0x006FD320,
+
+	// mapped fnid 0x5C74903D
+	cellFsReaddir : 0x006FCDF8, // s64 cellFsReadDir(Lv2FsFile fd, Lv2FsDirent* entry, u64* read)
+
+	// mapped fnid 0x606F9F42
+	cellFsChangeFileSizeWithoutAllocation : 0x006FD218,
+
+	// mapped fnid 0x6A4B95C1
+	unk_6A4B95C1 : 0x006FD050,
+
+	// mapped fnid 0x6AE0BA7F
+	unk_6AE0BA7F : 0x006FCE30,
+
+	// mapped fnid 0x6C815943
+	unk_6C815943 : 0x006FCE78,
+
+	// mapped fnid 0x6D3BB15B
+	cellFsSdataOpenByFd : 0x006FD2C0,
+
+	// mapped fnid 0x718BF5F8
+	cellFsOpen : 0x006FD1F0, // s64 cellFsOpen(const char* path, s32 oflags, Lv2FsFile* fd, u32 mode, const void* arg, u64 argsize)
+
+	// mapped fnid 0x75F16DC5
+	cellFsSetIoBufferFromDefaultContainer : 0x006FD258,
+
+	// mapped fnid 0x7A0329A1
+	cellFsAllocateFileAreaWithoutZeroFill : 0x006FD220,
+
+	// mapped fnid 0x7DBB9A4D
+	unk_7DBB9A4D : 0x006FD1D0,
+
+	// mapped fnid 0x7DE6DCED
+	cellFsStat : 0x006FD128, // s64 cellFsStat(const char* path, Lv2FsStat* buf)
+
+	// mapped fnid 0x7F13FC8C
+	cellFsAioCancel : 0x006FD3C0,
+
+	// mapped fnid 0x7F4677A8
+	cellFsUnlink : 0x006FD200, // s64 cellFsUnlink(const char* path)
+
+	// mapped fnid 0x81F33783
+	cellFsStReadPutCurrentAddr : 0x006FD358,
+
+	// mapped fnid 0x842E7E06
+	unk_842E7E06 : 0x006FD190,
+
+	// mapped fnid 0x866F6AEC
+	cellFsStReadWaitCallback : 0x006FD348,
+
+	// mapped fnid 0x8CB722D5
+	cellFsWriteWithOffset : 0x006FD288,
+
+	// mapped fnid 0x8DCFF2CD
+	unk_8DCFF2CD : 0x006FD178,
+
+	// mapped fnid 0x8DF28FF9
+	cellFsStReadStart : 0x006FD378,
+
+	// mapped fnid 0x8F71C5B2
+	cellFsStReadWait : 0x006FD350,
+
+	// mapped fnid 0x91A1BEAA
+	cellFsSetDiscReadRetrySetting : 0x006FD328,
+
+	// mapped fnid 0x91D59F69
+	unk_91D59F69 : 0x006FCF20,
+
+	// mapped fnid 0x964DB398
+	unk_964DB398 : 0x006FD0F8,
+
+	// mapped fnid 0x967A162B
+	cellFsFsync : 0x006FCE48, // s64 cellFsFsync(Lv2FsFile fd)
+
+	// mapped fnid 0x99406D0B
+	cellFsChmod : 0x006FD140, // s64 cellFsChmod(const char* path, Lv2FsMode mode)
+
+	// mapped fnid 0x9B882495
+	cellFsGetDirectoryEntries : 0x006FD088,
+
+	// mapped fnid 0x9F951810
+	cellFsAioFinish : 0x006FD3D8,
+
+	// mapped fnid 0x9FDBBA89
+	unk_9FDBBA89 : 0x006FD330,
+
+	// mapped fnid 0xA01EE33A
+	cellFsRegisterConversionCallback : 0x006FD120,
+
+	// mapped fnid 0xA397D042
+	cellFsLseek : 0x006FCE38,
+
+	// mapped fnid 0xAA3B4BCD
+	cellFsGetFreeSize : 0x006FD170,
+
+	// mapped fnid 0xADDF33CD
+	unk_ADDF33CD : 0x006FD1C0,
+
+	// mapped fnid 0xAE4A225E
+	unk_AE4A225E : 0x006FD1C8,
+
+	// mapped fnid 0xB1840B53
+	cellFsSdataOpen : 0x006FD2A0,
+
+	// mapped fnid 0xB3AFEE8B
+	cellFsStReadGetRingBuf : 0x006FD390,
+
+	// mapped fnid 0xBA901FE6
+	cellFsMkdir : 0x006FD1A8,
+
+	// mapped fnid 0xBD273A88
+	cellFsStReadGetRegid : 0x006FD380,
+
+	// mapped fnid 0xBEF554A4
+	cellFsUtime : 0x006FD1A0,
+
+	// mapped fnid 0xC1C507E7
+	cellFsAioRead : 0x006FD3D0,
+
+	// mapped fnid 0xC85C4DE7
+	unk_C85C4DE7 : 0x006FD130,
+
+	// mapped fnid 0xC9DC3AC5
+	cellFsTruncate : 0x006FD198,
+
+	// mapped fnid 0xCB588DBA
+	cellFsFGetBlockSize : 0x006FCE50,
+
+	// mapped fnid 0xCBF1758B
+	unk_CBF1758B : 0x006FD158,
+
+	// mapped fnid 0xCF34969C
+	cellFsStReadGetStatus : 0x006FD388,
+
+	// mapped fnid 0xD338A65A
+	unk_D338A65A : 0x006FCE40,
+
+	// mapped fnid 0xD73938DF
+	cellFsStReadFinish : 0x006FD398,
+
+	// mapped fnid 0xDB869F20
+	cellFsAioInit : 0x006FD3E0,
+
+	// mapped fnid 0xE15939C3
+	cellFsChangeFileSizeByFdWithoutAllocation : 0x006FD018,
+
+	// mapped fnid 0xE3D28395
+	unk_E3D28395 : 0x006FD1F8,
+
+	// mapped fnid 0xE44827ED
+	unk_E44827ED : 0x006FD188,
+
+	// mapped fnid 0xECDCF2AB
+	cellFsWrite : 0x006FCDE0, // s64 cellFsWrite(Lv2FsFile fd, const void* buf, u64 size, u64* written)
+
+	// mapped fnid 0xEF3EFA34
+	cellFsFstat : 0x006FCE08, // s64 cellFsFstat(Lv2FsFile fd, Lv2FsStat* buf)
+
+	// mapped fnid 0xF0A73832
+	unk_F0A73832 : 0x006FD070,
+
+	// mapped fnid 0xF12EECC8
+	cellFsRename : 0x006FD1E0,
+
+	// mapped fnid 0xF44C0E1D
+	unk_F44C0E1D : 0x006FD138,
+
+	// mapped fnid 0xF8E5D9A0
+	cellFsStReadStop : 0x006FD370,
+
+	// mapped fnid 0xF94BAA80
+	cellFsUnregisterL10nCallbacks : 0x006FD118,
+
+	// mapped fnid 0xFF29F478
+	unk_FF29F478 : 0x006FD1E8,
+
+	// mapped fnid 0xFF42DCC3
+	cellFsClosedir : 0x006FCE00 // s64 cellFsCloseDir(Lv2FsFile fd)
+}
+
+// System IO Functions
+sys_io_v481D =
+{
+	sys_io_lib_fnid_ptr: 0x0063F3E0, // ExportFNIDTable_sys_io
+	sys_io_lib_func_ptr: 0x0063F4E4, // ExportStubTable_sys_io
+	
+	// mapped fnid 0x068FCBC6
+	sys_config_start : 0x006FCA70,
+
+	// mapped fnid 0x0D5F2C14
+	cellPadClearBuf : 0x006FCB48,
+
+	// mapped fnid 0x0E2DFAAD
+	cellPadInfoPressMode : 0x006FCB18,
+
+	// mapped fnid 0x10DA8DCC
+	unk_10DA8DCC : 0x006FCAC8,
+
+	// mapped fnid 0x13ED2BA4
+	unk_13ED2BA4 : 0x006FCB28,
+
+	// mapped fnid 0x1CF98800
+	cellPadInit : 0x006FCB58,
+
+	// mapped fnid 0x1F71ECBE
+	cellKbGetConfiguration : 0x006FCB88,
+
+	// mapped fnid 0x2073B7F6
+	cellKbClearBuf : 0x006FCBC0,
+
+	// mapped fnid 0x20A97BA2
+	cellPadLddRegisterController : 0x006FCAE8,
+
+	// mapped fnid 0x21A62E9B
+	cellMouseGetTabletDataList : 0x006FCC00,
+
+	// mapped fnid 0x2D16DA4F
+	cellMouseSetTabletMode : 0x006FCBF0,
+
+	// mapped fnid 0x2F1774D5
+	cellKbGetInfo : 0x006FCBB8,
+
+	// mapped fnid 0x3138E632
+	cellMouseGetData : 0x006FCC10,
+
+	// mapped fnid 0x3733EA3C
+	unk_3733EA3C : 0x006FCAB8,
+
+	// mapped fnid 0x3AAAD464
+	cellPadGetInfo : 0x006FCB40,
+
+	// mapped fnid 0x3EF66B95
+	cellMouseClearBuf : 0x006FCC28,
+
+	// mapped fnid 0x3F72C56E
+	cellKbSetLEDStatus : 0x006FCB90,
+
+	// mapped fnid 0x3F797DFF
+	cellPadGetRawData : 0x006FCB38,
+
+	// mapped fnid 0x433F6EC0
+	cellKbInit : 0x006FCBD0,
+
+	// mapped fnid 0x4AB1FA77
+	cellKbInit : 0x006FCBA8,
+
+	// mapped fnid 0x4CC9B68D
+	cellMouseGetTabletDataList : 0x006FCA90,
+
+	// mapped fnid 0x4D0B3B1F
+	cellMouseInfoTabletMode : 0x006FCBF8,
+
+	// mapped fnid 0x4D9B75D5
+	cellPadEnd : 0x006FCB50,
+
+	// mapped fnid 0x578E3C98
+	cellPadSetPortSetting : 0x006FCA98,
+
+	// mapped fnid 0x5BAF30FB
+	cellMouseGetInfo : 0x006FCC20,
+
+	// mapped fnid 0x5C016E79
+	unk_5C016E79 : 0x006FCAD0,
+
+	// mapped fnid 0x5F81900C
+	sys_config_unregister_service : 0x006FCA48,
+
+	// mapped fnid 0x662BB2AD
+	unk_662BB2AD : 0x006FCA40,
+
+	// mapped fnid 0x6AE10596
+	sys_config_add_service_listener : 0x006FCA60,
+
+	// mapped fnid 0x6BC09C61
+	cellPadGetDataExtra : 0x006FCAB0,
+
+	// mapped fnid 0x6BD131F0
+	cellMouseGetDataList : 0x006FCC08,
+
+	// mapped fnid 0x6D367953
+	sys_config_stop : 0x006FCA68,
+
+	// mapped fnid 0x7009B738
+	unk_7009B738 : 0x006FCB00,
+
+	// mapped fnid 0x73BB2D74
+	cellPadSetSensorMode : 0x006FCAE0,
+
+	// mapped fnid 0x78200559
+	cellPadInfoSensorMode : 0x006FCB08,
+
+	// mapped fnid 0x78F058A2
+	sys_config_register_service : 0x006FCA50,
+
+	// mapped fnid 0x8A00F264
+	cellPadPeriphGetData : 0x006FCA88,
+
+	// mapped fnid 0x8B72CDA1
+	cellPadGetData : 0x006FCB30,
+
+	// mapped fnid 0x8B8231E5
+	cellPadLddGetPortNo : 0x006FCAD8,
+
+	// mapped fnid 0x8E06D13B
+	unk_8E06D13B : 0x006FCA38,
+
+	// mapped fnid 0xA328CC35
+	cellMouseGetRawData : 0x006FCC18,
+
+	// mapped fnid 0xA5F85E4D
+	cellKbSetCodeType : 0x006FCBA0,
+
+	// mapped fnid 0xA703A51D
+	cellPadGetInfo2 : 0x006FCAA0,
+
+	// mapped fnid 0xBAFD6409
+	cellPadLddDataInsert : 0x006FCAF0,
+
+	// mapped fnid 0xBE5BE3BA
+	cellPadSetSensorMode : 0x006FCB10,
+
+	// mapped fnid 0xBFCE3285
+	cellKbEnd : 0x006FCBC8,
+
+	// mapped fnid 0xC9030138
+	cellMouseInit : 0x006FCC38,
+
+	// mapped fnid 0xCCC785DF
+	unk_CCC785DF : 0x006FCBE8,
+
+	// mapped fnid 0xDBF4C59C
+	unk_DBF4C59C : 0x006FCAC0,
+
+	// mapped fnid 0xDEEFDFA7
+	cellKbSetReadMode : 0x006FCB98,
+
+	// mapped fnid 0xE10183CE
+	cellMouseEnd : 0x006FCC30,
+
+	// mapped fnid 0xE442FAA8
+	cellPadLddUnregisterController : 0x006FCAF8,
+
+	// mapped fnid 0xE5E139DD
+	unk_E5E139DD : 0x006FCA80,
+
+	// mapped fnid 0xF5D9D571
+	sys_config_remove_service_listener : 0x006FCA58,
+
+	// mapped fnid 0xF65544EE
+	cellPadSetActDirect : 0x006FCAA8,
+
+	// mapped fnid 0xF83F8182
+	cellPadSetPressMode : 0x006FCB20,
+
+	// mapped fnid 0xFF0A21B7
+	cellKbRead : 0x006FCBB0
 }
 
 
