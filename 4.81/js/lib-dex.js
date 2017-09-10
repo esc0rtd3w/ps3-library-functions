@@ -383,7 +383,7 @@ sysConsoleId_v481D =
 	lib_func_ptr: 0x0063F3D4, // ExportStubTable_sysConsoleId
 	
 	// mapped fnid 0xF220F751
-	sysConsoleId : 006FC6A0,
+	sysConsoleId : 0x006FC6A0,
 }
 
 
