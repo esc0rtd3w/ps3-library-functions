@@ -8,10 +8,10 @@ Collection of PS3 Library Functions
 We could really use your help adding support for other firmware versions!
 ===
 
+Thanks!
+===
+
 Offsets: 
 ===
 4.81: CEX = DEX+0x100F0
-===
-
-Thanks!
 ===
