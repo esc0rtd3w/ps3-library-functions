@@ -1336,7 +1336,7 @@ stdc_v481D =
 	lib_func_ptr: 0x00640184, // ExportStubTable_stdc
 	
 	// mapped fnid 0x00FDE072
-	 : 0x006FBF00, // powf
+	powf : 0x006FBF00,
 
 	// mapped fnid 0x04A183FC
 	strcpy : 0x006FC2C0,
