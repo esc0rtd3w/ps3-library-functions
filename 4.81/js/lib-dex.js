@@ -1690,7 +1690,7 @@ stdc_v481D =
 	wmemcmp : 0x006FC260,
 
 	// mapped fnid 0xAC893127
-	 : 0x006FC040,
+	fgetc : 0x006FC040,
 
 	// mapped fnid 0xAD62A342
 	ldiv : 0x006FC0C8,
