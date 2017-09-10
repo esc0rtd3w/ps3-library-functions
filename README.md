@@ -9,7 +9,7 @@ We could really use your help adding support for other firmware versions!
 ===
 
 Offsets: 
-
+===
 4.81: CEX = DEX+0x100F0
 ===
 
