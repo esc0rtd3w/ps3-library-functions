@@ -956,7 +956,7 @@ sysPrxForUser_v481D =
 	lib_func_ptr: 0x0063F114, // ExportStubTable_sysPrxForUser
 	
 	// mapped fnid 0x2E20EC1
-	unk_2E20EC1 : 0x00000000,
+	unk_2E20EC1 : 0x006FC8C0,
 	
 	// mapped fnid 0x341BB97
 	sys_prx_get_module_id_by_address : 0x006FC928,
