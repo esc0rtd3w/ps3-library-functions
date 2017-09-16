@@ -28,6 +28,133 @@ var idps_v481D = [
 ]
 
 
+
+// Module Segments Info .data
+
+// Flags
+// 0x400005: PPU (EXEC|READ) SPU (READ)
+// 0x400007: PPU (EXEC|WRITE|READ) SPU (READ)
+// 0x600006: PPU (WRITE|READ) SPU (WRITE|READ)
+var segments_data_v481D = [
+	{ name: 'basic_plugins_module', memsize: '0x619C', filesize: '0x2714', start: '0xAD0000', end: '0xAD619C', flags: '0x600006', alignment: '16' },
+	{ name: 'cat_setting_plugin_module', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
+	{ name: 'cell_libac3dec_lib', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
+	{ name: 'cellAdec_Library', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
+	{ name: 'cellAsfParser2_Library', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
+	{ name: 'cellAtrac_Library', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
+	{ name: 'cellAtrac3dec_Library', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
+	{ name: 'cellAtracXdec_Library', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
+	{ name: 'cellDmux_Library', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
+	{ name: 'cellDmuxPamf_Library', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
+	{ name: 'cellGifDec_Library', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
+	{ name: 'cellJpgDec_Library', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
+	{ name: 'cellM4AacDec_Library', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
+	{ name: 'cellMP3dec_Library', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
+	{ name: 'cellMtp_Library', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
+	{ name: 'cellPamf_Library', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
+	{ name: 'cellSre_Library', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
+	{ name: 'cellTiffDec_Library', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
+	{ name: 'custom_render_module', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
+	{ name: 'eseidle_module', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
+	{ name: 'explore_plugin_module', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
+	{ name: 'fs_utililty_full', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
+	{ name: 'libavcdec_Library', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
+	{ name: 'libsmvd4_Library', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
+	{ name: 'libvdec_Library', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
+	{ name: 'mms_db_full_module', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
+	{ name: 'mms_ext_full_module', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
+	{ name: 'mms_module', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
+	{ name: 'msmw1_module', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
+	{ name: 'msmw2_module', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
+	{ name: 'paf_ext_module', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
+	{ name: 'paf_web_module', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
+	{ name: 'qgl_base_module', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
+	{ name: 'sacd_module', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
+	{ name: 'silk_base_module', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
+	{ name: 'silk_e_module', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
+	{ name: 'silk_e_module', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
+	{ name: 'silk_npflashplayer9_module', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
+	{ name: 'silk_webkit_module', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
+	{ name: 'silk_wk_module', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
+	{ name: 'soundvisualizer_module', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
+	{ name: 'sys_audio_Library', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
+	{ name: 'vshmain_ext_module', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
+	{ name: 'webrender_plugin_module', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
+	{ name: 'x3_amgsdk_module', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
+	{ name: 'x3_mdimp1_module', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
+	{ name: 'x3_mdimp2_module', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
+	{ name: 'x3_mdimp3_module', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
+	{ name: 'x3_mdimp4_module', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
+	{ name: 'x3_mdimp6_module', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
+	{ name: 'x3_mdimp8_module', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
+	{ name: 'x3_mdimp9_module', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
+	{ name: 'xmb_plugin_module', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' }
+];
+
+
+// Module Segments Info .text
+
+// Flags
+// 0x400005: PPU (EXEC|READ) SPU (READ)
+// 0x400007: PPU (EXEC|WRITE|READ) SPU (READ)
+// 0x600006: PPU (WRITE|READ) SPU (WRITE|READ)
+var segments_text_v481D = [
+	{ name: 'basic_plugins_module', memsize: '0x4E898', filesize: '0x00000000', start: '0xA80000', end: '0xACE898', flags: '0x400005', alignment: '16' },
+	{ name: 'cat_setting_plugin_module', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
+	{ name: 'cell_libac3dec_lib', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
+	{ name: 'cellAdec_Library', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
+	{ name: 'cellAsfParser2_Library', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
+	{ name: 'cellAtrac_Library', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
+	{ name: 'cellAtrac3dec_Library', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
+	{ name: 'cellAtracXdec_Library', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
+	{ name: 'cellDmux_Library', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
+	{ name: 'cellDmuxPamf_Library', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
+	{ name: 'cellGifDec_Library', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
+	{ name: 'cellJpgDec_Library', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
+	{ name: 'cellM4AacDec_Library', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
+	{ name: 'cellMP3dec_Library', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
+	{ name: 'cellMtp_Library', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
+	{ name: 'cellPamf_Library', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
+	{ name: 'cellSre_Library', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
+	{ name: 'cellTiffDec_Library', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
+	{ name: 'custom_render_module', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
+	{ name: 'eseidle_module', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
+	{ name: 'explore_plugin_module', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
+	{ name: 'fs_utililty_full', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
+	{ name: 'libavcdec_Library', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
+	{ name: 'libsmvd4_Library', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
+	{ name: 'libvdec_Library', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
+	{ name: 'mms_db_full_module', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
+	{ name: 'mms_ext_full_module', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
+	{ name: 'mms_module', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
+	{ name: 'msmw1_module', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
+	{ name: 'msmw2_module', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
+	{ name: 'paf_ext_module', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
+	{ name: 'paf_web_module', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
+	{ name: 'qgl_base_module', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
+	{ name: 'sacd_module', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
+	{ name: 'silk_base_module', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
+	{ name: 'silk_e_module', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
+	{ name: 'silk_e_module', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
+	{ name: 'silk_npflashplayer9_module', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
+	{ name: 'silk_webkit_module', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
+	{ name: 'silk_wk_module', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
+	{ name: 'soundvisualizer_module', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
+	{ name: 'sys_audio_Library', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
+	{ name: 'vshmain_ext_module', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
+	{ name: 'webrender_plugin_module', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
+	{ name: 'x3_amgsdk_module', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
+	{ name: 'x3_mdimp1_module', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
+	{ name: 'x3_mdimp2_module', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
+	{ name: 'x3_mdimp3_module', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
+	{ name: 'x3_mdimp4_module', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
+	{ name: 'x3_mdimp6_module', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
+	{ name: 'x3_mdimp8_module', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
+	{ name: 'x3_mdimp9_module', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
+	{ name: 'xmb_plugin_module', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' }
+];
+
+
 // Kernel Modules Loaded
 var modules_v481D = [
 	{ name: 'basic_plugins_module', memsize: '0x54A34', start: '0x00AD1724', stop: '0x00AD171C', prx: '/dev_flash/vsh/module/basic_plugins.sprx' },
@@ -67,7 +194,7 @@ var modules_v481D = [
 	{ name: 'silk_base_module', memsize: '0x1018F20', start: '0x01B0A464', stop: '0x01B0A4CC', prx: '/dev_flash/vsh/module/silk_base.sprx' },
 	{ name: 'silk_e_module', memsize: '0xE750', start: '0x01B40350', stop: '0x01B40380', prx: '/dev_flash/vsh/module/silk_mrcommon.sprx' },
 	{ name: 'silk_e_module', memsize: '0xE750', start: '0x01B60318', stop: '0x01B60368', prx: '/dev_flash/vsh/module/silk_mrserver.sprx' },
-	{ name: 'silk_npflashplayer9_module', memsize: '0x5CD710', start: '0x02C6C7A0', stop: '0x02C6C790', prx: '/dev_flash/vsh/module/silk_npflashplayer9.sprx' },
+	{ name: 'silk_npflashplayer9_module', memsize: '0x5CD710', start: '0x02C6C7A0', stop: '0x02C6C790', bytes: 'F821FF917C0802A6F8010080480000BD', prx: '/dev_flash/vsh/module/silk_npflashplayer9.sprx' },
 	{ name: 'silk_webkit_module', memsize: '0xEB4D8C', start: '0x02D644F4', stop: '0x02D644EC', prx: '/dev_flash/vsh/module/silk_webkit.sprx' },
 	{ name: 'silk_wk_module', memsize: '0x63AB50', start: '0x02E13D88', stop: '0x02E13DE8', prx: '/dev_flash/vsh/module/silk_wk.sprx' },
 	{ name: 'soundvisualizer_module', memsize: '0x43E48', start: '0x00A202B8', stop: '0x00A202B0', prx: '/dev_flash/vsh/module/soundvisualizer_plugin.sprx' },
@@ -84,6 +211,7 @@ var modules_v481D = [
 	{ name: 'x3_mdimp9_module', memsize: '0x3A8B0', start: '0x016C1CF4', stop: '0x016C1CEC', prx: '/dev_flash/vsh/module/x3_mdimp9.sprx' },
 	{ name: 'xmb_plugin_module', memsize: '0x1E164', start: '0x00A714FC', stop: '0x00A714F4', prx: '/dev_flash/vsh/module/xmb_plugin.sprx' }
 ];
+//console.table(fullmem_v481D);
 //console.table(idps_v481D);
 //console.table(modules_v481D);
 
