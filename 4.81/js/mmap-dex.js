@@ -37,10 +37,10 @@ var idps_v481D = [
 // 0x600006: PPU (WRITE|READ) SPU (WRITE|READ)
 var segments_data_v481D = [
 	{ name: 'basic_plugins_module', memsize: '0x619C', filesize: '0x2714', start: '0xAD0000', end: '0xAD619C', flags: '0x600006', alignment: '16' },
-	{ name: 'cat_setting_plugin_module', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
-	{ name: 'cell_libac3dec_lib', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
-	{ name: 'cellAdec_Library', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
-	{ name: 'cellAsfParser2_Library', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
+	{ name: 'cat_setting_plugin_module', memsize: '0x79C', filesize: '0x734', start: '0x11D0000', end: '0x11D079C', flags: '0x600006', alignment: '16' },
+	{ name: 'cell_libac3dec_lib', memsize: '0x150', filesize: '0x144', start: '0x900000', end: '0x900150', flags: '0x600006', alignment: '16' },
+	{ name: 'cellAdec_Library', memsize: '0x3F0', filesize: '0x3EC', start: '0x8B0000', end: '0x8B03F0', flags: '0x600006', alignment: '16' },
+	{ name: 'cellAsfParser2_Library', memsize: '0x970', filesize: '0x964', start: '0xF90000', end: '0xF90970', flags: '0x600006', alignment: '16' },
 	{ name: 'cellAtrac_Library', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
 	{ name: 'cellAtrac3dec_Library', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
 	{ name: 'cellAtracXdec_Library', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
@@ -99,11 +99,11 @@ var segments_data_v481D = [
 // 0x400007: PPU (EXEC|WRITE|READ) SPU (READ)
 // 0x600006: PPU (WRITE|READ) SPU (WRITE|READ)
 var segments_text_v481D = [
-	{ name: 'basic_plugins_module', memsize: '0x4E898', filesize: '0x00000000', start: '0xA80000', end: '0xACE898', flags: '0x400005', alignment: '16' },
-	{ name: 'cat_setting_plugin_module', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
-	{ name: 'cell_libac3dec_lib', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
-	{ name: 'cellAdec_Library', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
-	{ name: 'cellAsfParser2_Library', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
+	{ name: 'basic_plugins_module', memsize: '0x4E898', filesize: '0x4E898', start: '0xA80000', end: '0xACE898', flags: '0x400005', alignment: '16' },
+	{ name: 'cat_setting_plugin_module', memsize: '0x8CC0', filesize: '0x8CC0', start: '0x11C0000', end: '0x11C8CC0', flags: '0x400005', alignment: '16' },
+	{ name: 'cell_libac3dec_lib', memsize: '0x40000', filesize: '0x1D180', start: '0x8C0000', end: '0x900000', flags: '0x400007', alignment: '128' },
+	{ name: 'cellAdec_Library', memsize: '0xC400', filesize: '0xC400', start: '0x8A0000', end: '0x8AC400', flags: '0x400007', alignment: '128' },
+	{ name: 'cellAsfParser2_Library', memsize: '0x1986C', filesize: '0x1986C', start: '0xF70000', end: '0xF8986C', flags: '0x400005', alignment: '16' },
 	{ name: 'cellAtrac_Library', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
 	{ name: 'cellAtrac3dec_Library', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
 	{ name: 'cellAtracXdec_Library', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
