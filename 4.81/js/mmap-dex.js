@@ -158,21 +158,34 @@ var segments_text_v481D = [
 // Module Segments Info .data
 // Not Loaded By Default In Web Browser But Can Be Loaded From Web Browser
 var segments_other_data_v481D = [
-	{ name: 'download_plugin_module', memsize: '0x101BC', filesize: '0x7328', start: '0x1750000', end: '0x17601BC', flags: '0x600006', alignment: '16' },
+	{ name: 'cellFt2d', memsize: '0x0', filesize: '0x0', start: '0x0', end: '0x0', flags: '0x0', alignment: '00' }, // Loaded From download_plugin_module on media copy
+	{ name: 'cellJpgEnc_Library', memsize: '0x0', filesize: '0x0', start: '0x0', end: '0x0', flags: '0x0', alignment: '00' }, // Loaded From download_plugin_module on media copy
+	{ name: 'cellPngEnc_Library', memsize: '0x0', filesize: '0x0', start: '0x0', end: '0x0', flags: '0x0', alignment: '00' }, // Loaded From download_plugin_module on media copy
+	{ name: 'download_plugin_module', memsize: '0x101BC', filesize: '0x7328', start: '0x1750000', end: '0x17601BC', flags: '0x600006', alignment: '16' }, // Loaded from browser on media file click
+	{ name: 'x3_xcbplugin1_module', memsize: '0x0', filesize: '0x0', start: '0x0', end: '0x0', flags: '0x0', alignment: '00' }, // Loaded From download_plugin_module on media copy
 ];
 
 
 // Module Segments Info .text
 // Not Loaded By Default In Web Browser But Can Be Loaded From Web Browser
 var segments_other_text_v481D = [
-	{ name: 'download_plugin_module', memsize: '0x51168', filesize: '0x51168', start: '0x2E40000', end: '0x2E91168', flags: '0x400005', alignment: '16' },
+	{ name: 'cellFt2d', memsize: '0x0', filesize: '0x0', start: '0x0', end: '0x0', flags: '0x0', alignment: '00' }, // Loaded From download_plugin_module on media copy
+	{ name: 'cellJpgEnc_Library', memsize: '0x0', filesize: '0x0', start: '0x0', end: '0x0', flags: '0x0', alignment: '00' }, // Loaded From download_plugin_module on media copy
+	{ name: 'cellPngEnc_Library', memsize: '0x0', filesize: '0x0', start: '0x0', end: '0x0', flags: '0x0', alignment: '00' }, // Loaded From download_plugin_module on media copy
+	{ name: 'download_plugin_module', memsize: '0x51168', filesize: '0x51168', start: '0x2E40000', end: '0x2E91168', flags: '0x400005', alignment: '16' }, // Loaded from browser on media file click
+	{ name: 'x3_xcbplugin1_module', memsize: '0x0', filesize: '0x0', start: '0x0', end: '0x0', flags: '0x0', alignment: '00' }, // Loaded From download_plugin_module on media copy
 ];
 
 
 // Kernel Modules Loaded
 // Not Loaded By Default In Web Browser But Can Be Loaded From Web Browser
 var modules_other_v481D = [
-	{ name: 'download_plugin_module', memsize: '0x61324', start: '0x01751090', stop: '0x017510C0', prx: '/dev_flash/vsh/module/download_plugin.sprx' },
+	
+	{ name: 'cellFt2d', memsize: '0x278D0', start: '0x0', stop: '0x0', prx: '' }, // Loaded From download_plugin_module on media copy
+	{ name: 'cellJpgEnc_Library', memsize: '0x3D910', start: '0x0', stop: '0x0', prx: '' }, // Loaded From download_plugin_module on media copy
+	{ name: 'cellPngEnc_Library', memsize: '0x3A090', start: '0x0', stop: '0x0', prx: '' }, // Loaded From download_plugin_module on media copy
+	{ name: 'download_plugin_module', memsize: '0x61324', start: '0x01751090', stop: '0x017510C0', prx: '/dev_flash/vsh/module/download_plugin.sprx' }, // Loaded from browser on media file click
+	{ name: 'x3_xcbplugin1_module', memsize: '0x1D86CC', start: '0x0', stop: '0x0', prx: '' }, // Loaded From download_plugin_module on media copy
 ];
 
 
