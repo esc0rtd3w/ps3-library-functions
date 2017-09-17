@@ -2,6 +2,29 @@
    Resolved library functions PS3 DEX
 */
 
+//push to stack
+//stw r3, -4(r1)
+//subi r1, r1, 4
+
+//stwu r3, -4(r1)
+
+
+//pop from stack
+//lwz r3, 0(r1)
+//addi r1, 4
+
+//sthu r3, -2(r1)
+//lhz r4, 0(r1)
+//addi r1, r1, 2
+
+
+//push pop
+//stbu r4, -1(r1)
+//lbz r3, 0(r1)
+//addi r1, r1, 1
+
+
+
 
 // Allocator Functions
 allocator_v481D =
@@ -2842,3 +2865,144 @@ xsetting_v481D =
 	
 	
 }
+
+
+// SCE Allocator Functions
+sceAllocatorFcns_v481D =
+{
+	malloc : 0x006FB9C8,
+	free : 0x006FB9F8,
+	memalign : 0x006FB9E8
+}
+
+
+// SCE FS Functions
+sceFSFcns_v481D =
+{
+	cellFsRename : 0x006FD1E0,
+	cellFsClose : 0x006FCDE8,
+	cellFsOpen : 0x006FD1F0,
+	cellFsWrite : 0x006FCDE0,
+	cellFsRead : 0x006FCDD8,
+	cellFsMkdir : 0x006FD1A8,
+	cellFsRmdir : 0x006FD208,
+	cellFsChmod : 0x006FD140,
+	cellFsUnlink : 0x006FD200
+}
+
+
+// SCE VSH Task Functions
+sceVSHTaskFcns_v481D =
+{
+	vshtask_notify : 0x006E6408
+}
+
+
+// SCE VSH Functions
+sceVSH_v481D =
+{
+	Heap_Create : 0x006FBD40,
+	Heap_Alloc : 0x006FBD30,
+	Heap_Destroy : 0x006FBD38,
+	Heap_Free : 0x006FBD20,
+	vsh_E7C34044 : 0x006FBCC8, //retrieves vsh memory container by "id" 0=game,1=app,2=debug,3=fg, 4=bg  sys_memory_container_t vsh_E7C34044(int id) 
+	cellFsUtilMount : 0x006FD490
+}
+
+// SCE Lib Functions
+sceLibcFcns_v481D =
+{
+	abort : 0x006FBFE8,
+	exit : 0x006FC018,
+    strcpy : 0x006FC2C0,
+	mkdir : 0x006FC3F0,
+	mbrtowc : 0x006FC0D8,
+	sprintf : 0x006FC330,
+	strlen : 0x006FC170,
+	snprintf : 0x006FC320,
+	strcmp : 0x006FC2B8,
+	fputs : 0x006FC070,
+	memset : 0x006FC470,
+	memmove : 0x006FC0F8,
+	wcslen : 0x006FC210,
+	fopen : 0x006FC060,
+	stat : 0x006FC400,
+	rename : 0x006FC130,
+	rmdir : 0x006FC3F8,
+	memcpy : 0x006FC0F0,
+	strcat : 0x006FC2A8,
+	strcasecmp : 0x006FC2E0,
+	printf : 0x006FC310,
+	memcmp : 0x006FC478,
+	strstr : 0x006FC188,
+	fread : 0x006FC078,
+	strchr : 0x006FC2B0,
+	fclose : 0x006FC020,
+	strncmp : 0x006FC2D0,
+	strtok : 0x006FC190,
+	unlink : 0x006FC418,
+	fwrite : 0x006FC0A0,
+	fprintf : 0x006FC2F0,
+	strdup : 0x006FC1A8,
+	mbstowcs : 0x006FC0E0
+}
+
+
+// Check Firmware Version
+version_deps =
+{
+	v4_81D:
+	{
+        "SceWebKit":        
+        {
+            gadgets:
+            {		
+				/*PPC
+				mflr
+				bl
+				blr
+				
+				*/			
+				/*  ARM
+				ldmr0 : 0x3bc534,			//  ldm	r0, {r0, r3, r4, r9, fp, ip, pc}
+				ldmr1 : 0x453ff0,   		//  ldm     r1, {r0, ip, lr, pc}
+				iloop : 0x9851c | 1,        //  infinite loop
+                bxlr : 0x2b3a | 1,          //  bx lr
+				str3 : 0x7f4ac | 1,         //  str     r3, [r0, #4]; bx  lr
+                movr30 : 0x535278 | 1       //  movs    r3, r0 ; bx lr 
+				*/
+            },
+            functions: {}
+        },
+		"SceFS":
+		{
+			functions : sceFSFcns_v481D,
+			gadgets : {}
+		},
+		"SceAllocator":
+		{
+			functions : sceAllocatorFcns_v481D, 
+            gadgets : {}
+		},
+        "SceVshTask":
+        { 
+            functions : sceVSHTaskFcns_v481D, 
+            gadgets : {}
+        },
+		"SceVsh":
+		{
+			functions : sceVSH_v481D,
+			gadgets : {}
+		},
+        "SceLibc":
+        {
+            functions: sceLibcFcns_v481D,
+            gadgets : 
+            {
+               // scesetjmp : 0x13EE0 | 1,
+               // scelongjmp : 0x13F10 | 1
+            }
+        }
+    }
+};
+
