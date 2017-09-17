@@ -68,27 +68,27 @@ var segments_data_v481D = [
 	{ name: 'msmw2_module', memsize: '0x4BD54', filesize: '0xA690', start: '0x1150000', end: '0x119BD54', flags: '0x600006', alignment: '16' },
 	{ name: 'paf_ext_module', memsize: '0x5C34', filesize: '0x5B04', start: '0x960000', end: '0x965C34', flags: '0x600006', alignment: '16' },
 	{ name: 'paf_web_module', memsize: '0x1CD4', filesize: '0x1B54', start: '0xA70000', end: '0xA71CD4', flags: '0x600006', alignment: '16' },
-	{ name: 'qgl_base_module', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
-	{ name: 'sacd_module', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
-	{ name: 'silk_base_module', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
-	{ name: 'silk_e_module', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
-	{ name: 'silk_e_module', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
-	{ name: 'silk_npflashplayer9_module', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
-	{ name: 'silk_webkit_module', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
-	{ name: 'silk_wk_module', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
-	{ name: 'soundvisualizer_module', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
-	{ name: 'sys_audio_Library', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
-	{ name: 'vshmain_ext_module', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
-	{ name: 'webrender_plugin_module', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
-	{ name: 'x3_amgsdk_module', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
-	{ name: 'x3_mdimp1_module', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
-	{ name: 'x3_mdimp2_module', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
-	{ name: 'x3_mdimp3_module', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
-	{ name: 'x3_mdimp4_module', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
-	{ name: 'x3_mdimp6_module', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
-	{ name: 'x3_mdimp8_module', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
-	{ name: 'x3_mdimp9_module', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
-	{ name: 'xmb_plugin_module', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' }
+	{ name: 'qgl_base_module', memsize: '0xAF48', filesize: '0x2C44', start: '0x9E0000', end: '0x9EAF48', flags: '0x600006', alignment: '128' },
+	{ name: 'sacd_module', memsize: '0x1AD00', filesize: '0x518', start: '0x1230000', end: '0x124AD00', flags: '0x600006', alignment: '128' },
+	{ name: 'silk_base_module', memsize: '0x37BD0', filesize: '0x14B34', start: '0x1250000', end: '0x1287BD0', flags: '0x600006', alignment: '16' },
+	{ name: 'silk_e_module', memsize: '0x868', filesize: '0x80C', start: '0x1200000', end: '0x1200868', flags: '0x600006', alignment: '16' }, // shared name
+	{ name: 'silk_e_module_', memsize: '0x9AC', filesize: '0x950', start: '0x1710000', end: '0x17109AC', flags: '0x600006', alignment: '16' }, // added "_" to name
+	{ name: 'silk_npflashplayer9_module', memsize: '0x9D810', filesize: '0x537B0', start: '0x2BF0000', end: '0x2C8D810', flags: '0x600006', alignment: '128' },
+	{ name: 'silk_webkit_module', memsize: '0x113924', filesize: '0xFFF10', start: '0x2C90000', end: '0x2DA3924', flags: '0x600006', alignment: '16' },
+	{ name: 'silk_wk_module', memsize: '0x54920', filesize: '0x4EF5C', start: '0x2DB0000', end: '0x2E04920', flags: '0x600006', alignment: '16' },
+	{ name: 'soundvisualizer_module', memsize: '0x401B8', filesize: '0x4B4', start: '0x13B0000', end: '0x13F01B8', flags: '0x600006', alignment: '16' },
+	{ name: 'sys_audio_Library', memsize: '0x3E2E8', filesize: '0x4574', start: '0x820000', end: '0x85E2E8', flags: '0x600006', alignment: '128' },
+	{ name: 'vshmain_ext_module', memsize: '0x17C0', filesize: '0x574', start: '0xA00000', end: '0xA017C0', flags: '0x600006', alignment: '128' },
+	{ name: 'webrender_plugin_module', memsize: '0xD0D8', filesize: '0xA328', start: '0x11E0000', end: '0x11ED0D8', flags: '0x600006', alignment: '16' },
+	{ name: 'x3_amgsdk_module', memsize: '0x570', filesize: '0x224', start: '0x16E0000', end: '0x16E0570', flags: '0x600006', alignment: '16' },
+	{ name: 'x3_mdimp1_module', memsize: '0x1BD4', filesize: '0x1944', start: '0x16A0000', end: '0x16A1BD4', flags: '0x600006', alignment: '16' },
+	{ name: 'x3_mdimp2_module', memsize: '0xC50', filesize: '0xBC4', start: '0x16C0000', end: '0x16C0C50', flags: '0x600006', alignment: '16' },
+	{ name: 'x3_mdimp3_module', memsize: '0x113C', filesize: '0xA04', start: '0x1540000', end: '0x154113C', flags: '0x600006', alignment: '16' },
+	{ name: 'x3_mdimp4_module', memsize: '0x1CCC', filesize: '0x1734', start: '0x1570000', end: '0x1571CCC', flags: '0x600006', alignment: '16' },
+	{ name: 'x3_mdimp6_module', memsize: '0x26E08', filesize: '0x8040', start: '0x1600000', end: '0x1626E08', flags: '0x600006', alignment: '16' },
+	{ name: 'x3_mdimp8_module', memsize: '0x6F4', filesize: '0x494', start: '0x1700000', end: '0x17006F4', flags: '0x600006', alignment: '16' },
+	{ name: 'x3_mdimp9_module', memsize: '0x3D8C', filesize: '0x23E4', start: '0x1670000', end: '0x1673D8C', flags: '0x600006', alignment: '16' },
+	{ name: 'xmb_plugin_module', memsize: '0x2630', filesize: '0x1B5C', start: '0x1420000', end: '0x1422630', flags: '0x600006', alignment: '16' }
 ];
 
 
@@ -101,28 +101,28 @@ var segments_data_v481D = [
 var segments_text_v481D = [
 	{ name: 'basic_plugins_module', memsize: '0x4E898', filesize: '0x4E898', start: '0xA80000', end: '0xACE898', flags: '0x400005', alignment: '16' },
 	{ name: 'cat_setting_plugin_module', memsize: '0x8CC0', filesize: '0x8CC0', start: '0x11C0000', end: '0x11C8CC0', flags: '0x400005', alignment: '16' },
-	{ name: 'cell_libac3dec_lib', memsize: '0x40000', filesize: '0x1D180', start: '0x8C0000', end: '0x900000', flags: '0x400007', alignment: '128' },
-	{ name: 'cellAdec_Library', memsize: '0xC400', filesize: '0xC400', start: '0x8A0000', end: '0x8AC400', flags: '0x400007', alignment: '128' },
+	{ name: 'cell_libac3dec_lib', memsize: '0x40000', filesize: '0x1D180', start: '0x8C0000', end: '0x900000', flags: '0x400007', alignment: '128' }, // RWX
+	{ name: 'cellAdec_Library', memsize: '0xC400', filesize: '0xC400', start: '0x8A0000', end: '0x8AC400', flags: '0x400007', alignment: '128' }, // RWX
 	{ name: 'cellAsfParser2_Library', memsize: '0x1986C', filesize: '0x1986C', start: '0xF70000', end: '0xF8986C', flags: '0x400005', alignment: '16' },
 	{ name: 'cellAtrac_Library', memsize: '0x3CE0', filesize: '0x3CE0', start: '0xF00000', end: '0xF03CE0', flags: '0x400005', alignment: '16' },
 	{ name: 'cellAtrac3dec_Library', memsize: '0xA580', filesize: '0xA580', start: '0xD20000', end: '0xD2A580', flags: '0x400005', alignment: '128' },
 	{ name: 'cellAtracXdec_Library', memsize: '0x29C00', filesize: '0x29C00', start: '0xCE0000', end: '0xD09C00', flags: '0x400005', alignment: '128' },
 	{ name: 'cellDmux_Library', memsize: '0x25D0', filesize: '0x25D0', start: '0xB00000', end: '0xB025D0', flags: '0x400005', alignment: '16' },
 	{ name: 'cellDmuxPamf_Library', memsize: '0xB880', filesize: '0xB880', start: '0xC00000', end: '0xC0B880', flags: '0x400005', alignment: '128' },
-	{ name: 'cellGifDec_Library', memsize: '0x17E00', filesize: '0x17E00', start: '0x1430000', end: '0x1447E00', flags: '0x400007', alignment: '128' },
-	{ name: 'cellJpgDec_Library', memsize: '0x4B780', filesize: '0x4B780', start: '0xB70000', end: '0xBBB780', flags: '0x400007', alignment: '128' },
-	{ name: 'cellM4AacDec_Library', memsize: '0x80000', filesize: '0x68300', start: '0x2B70000', end: '0x2BF0000', flags: '0x400007', alignment: '128' },
-	{ name: 'cellMP3dec_Library', memsize: '0x21700', filesize: '0x21700', start: '0x1730000', end: '0x1751700', flags: '0x400007', alignment: '128' },
+	{ name: 'cellGifDec_Library', memsize: '0x17E00', filesize: '0x17E00', start: '0x1430000', end: '0x1447E00', flags: '0x400007', alignment: '128' }, // RWX
+	{ name: 'cellJpgDec_Library', memsize: '0x4B780', filesize: '0x4B780', start: '0xB70000', end: '0xBBB780', flags: '0x400007', alignment: '128' }, // RWX
+	{ name: 'cellM4AacDec_Library', memsize: '0x80000', filesize: '0x68300', start: '0x2B70000', end: '0x2BF0000', flags: '0x400007', alignment: '128' }, // RWX
+	{ name: 'cellMP3dec_Library', memsize: '0x21700', filesize: '0x21700', start: '0x1730000', end: '0x1751700', flags: '0x400007', alignment: '128' }, // RWX
 	{ name: 'cellMtp_Library', memsize: '0x17BC4', filesize: '0x17BC4', start: '0x1290000', end: '0x12A7BC4', flags: '0x400005', alignment: '16' },
 	{ name: 'cellPamf_Library', memsize: '0x3C40', filesize: '0x3C40', start: '0xCC0000', end: '0xCC3C40', flags: '0x400005', alignment: '16' },
 	{ name: 'cellSre_Library', memsize: '0x30000', filesize: '0x2E000', start: '0x860000', end: '0x890000', flags: '0x400005', alignment: '128' },
-	{ name: 'cellTiffDec_Library', memsize: '0x79500', filesize: '0x79500', start: '0x1460000', end: '0x14D9500', flags: '0x400007', alignment: '128' },
+	{ name: 'cellTiffDec_Library', memsize: '0x79500', filesize: '0x79500', start: '0x1460000', end: '0x14D9500', flags: '0x400007', alignment: '128' }, // RWX
 	{ name: 'custom_render_module', memsize: '0x9C010', filesize: '0x9C010', start: '0xC20000', end: '0xCBC010', flags: '0x400005', alignment: '16' },
 	{ name: 'eseidle_module', memsize: '0xD5C', filesize: '0xD5C', start: '0x11A0000', end: '0x11A0D5C', flags: '0x400005', alignment: '16' },
 	{ name: 'explore_plugin_module', memsize: '0x279F69', filesize: '0x279F69', start: '0x1770000', end: '0x19E9F69', flags: '0x400005', alignment: '16' },
 	{ name: 'fs_utililty_full', memsize: '0x150D0', filesize: '0x150D0', start: '0xA10000', end: '0xA250D0', flags: '0x400005', alignment: '16' },
-	{ name: 'libavcdec_Library', memsize: '0x1B0000', filesize: '0x195180', start: '0xD40000', end: '0xEF0000', flags: '0x400007', alignment: '128' },
-	{ name: 'libsmvd4_Library', memsize: '0x40000', filesize: '0x32B80', start: '0xF20000', end: '0xF60000', flags: '0x400007', alignment: '128' },
+	{ name: 'libavcdec_Library', memsize: '0x1B0000', filesize: '0x195180', start: '0xD40000', end: '0xEF0000', flags: '0x400007', alignment: '128' }, // RWX
+	{ name: 'libsmvd4_Library', memsize: '0x40000', filesize: '0x32B80', start: '0xF20000', end: '0xF60000', flags: '0x400007', alignment: '128' }, // RWX
 	{ name: 'libvdec_Library', memsize: '0x30000', filesize: '0x2A500', start: '0xBC0000', end: '0xBF0000', flags: '0x400005', alignment: '128' },
 	{ name: 'mms_db_full_module', memsize: '0xABD8', filesize: '0xABD8', start: '0x1380000', end: '0x138ABD8', flags: '0x400005', alignment: '16' },
 	{ name: 'mms_ext_full_module', memsize: '0x15AE0', filesize: '0x15AE0', start: '0x14F0000', end: '0x1505AE0', flags: '0x400005', alignment: '16' },
@@ -131,27 +131,27 @@ var segments_text_v481D = [
 	{ name: 'msmw2_module', memsize: '0x13B278', filesize: '0x13B278', start: '0x1010000', end: '0x114B278', flags: '0x400005', alignment: '16' },
 	{ name: 'paf_ext_module', memsize: '0x42F88', filesize: '0x42F88', start: '0x910000', end: '0x952F88', flags: '0x400005', alignment: '16' },
 	{ name: 'paf_web_module', memsize: '0x25908', filesize: '0x25908', start: '0xA40000', end: '0xA65908', flags: '0x400005', alignment: '16' },
-	{ name: 'qgl_base_module', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
-	{ name: 'sacd_module', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
-	{ name: 'silk_base_module', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
-	{ name: 'silk_e_module', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
-	{ name: 'silk_e_module', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
-	{ name: 'silk_npflashplayer9_module', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
-	{ name: 'silk_webkit_module', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
-	{ name: 'silk_wk_module', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
-	{ name: 'soundvisualizer_module', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
-	{ name: 'sys_audio_Library', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
-	{ name: 'vshmain_ext_module', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
-	{ name: 'webrender_plugin_module', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
-	{ name: 'x3_amgsdk_module', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
-	{ name: 'x3_mdimp1_module', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
-	{ name: 'x3_mdimp2_module', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
-	{ name: 'x3_mdimp3_module', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
-	{ name: 'x3_mdimp4_module', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
-	{ name: 'x3_mdimp6_module', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
-	{ name: 'x3_mdimp8_module', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
-	{ name: 'x3_mdimp9_module', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' },
-	{ name: 'xmb_plugin_module', memsize: '0x0000', filesize: '0x00000000', start: '0x00000000', end: '0x00000000', flags: '0x00000000', alignment: '' }
+	{ name: 'qgl_base_module', memsize: '0x6BBC4', filesize: '0x6BBC4', start: '0x970000', end: '0x9DBBC4', flags: '0x400005', alignment: '16' },
+	{ name: 'sacd_module', memsize: '0xA498', filesize: '0xA498', start: '0x1220000', end: '0x122A498', flags: '0x400005', alignment: '16' },
+	{ name: 'silk_base_module', memsize: '0xFE1350', filesize: '0xFE1350', start: '0x1B70000', end: '0x2B51350', flags: '0x400005', alignment: '256' },
+	{ name: 'silk_e_module', memsize: '0xDEE8', filesize: '0xDEE8', start: '0x11F0000', end: '0x11FDEE8', flags: '0x400005', alignment: '16' }, // shared name
+	{ name: 'silk_e_module_', memsize: '0x90C8', filesize: '0x90C8', start: '0x1210000', end: '0x12190C8', flags: '0x400005', alignment: '16' }, // added "_" to name
+	{ name: 'silk_npflashplayer9_module', memsize: '0x52FF00', filesize: '0x52FF00', start: '0x2F70000', end: '0x349FF00', flags: '0x400007', alignment: '128' }, // RWX
+	{ name: 'silk_webkit_module', memsize: '0xDA1468', filesize: '0xDA1468', start: '0x3770000', end: '0x4511468', flags: '0x400005', alignment: '16' },
+	{ name: 'silk_wk_module', memsize: '0x5E6230', filesize: '0x5E6230', start: '0x4770000', end: '0x4D56230', flags: '0x400005', alignment: '16' },
+	{ name: 'soundvisualizer_module', memsize: '0x3C90', filesize: '0x3C90', start: '0x13A0000', end: '0x13A3C90', flags: '0x400005', alignment: '16' },
+	{ name: 'sys_audio_Library', memsize: '0xAA080', filesize: '0xAA080', start: '0x770000', end: '0x81A080', flags: '0x400005', alignment: '128' },
+	{ name: 'vshmain_ext_module', memsize: '0xF520', filesize: '0xF520', start: '0x9F0000', end: '0x9FF520', flags: '0x400005', alignment: '16' },
+	{ name: 'webrender_plugin_module', memsize: '0x10AD80', filesize: '0x10AD80', start: '0x1A60000', end: '0x1B6AD80', flags: '0x400007', alignment: '' }, // RWX
+	{ name: 'x3_amgsdk_module', memsize: '0xD8B0', filesize: '0xD8B0', start: '0x16D0000', end: '0x16DD8B0', flags: '0x400005', alignment: '16' },
+	{ name: 'x3_mdimp1_module', memsize: '0x16C58', filesize: '0x16C58', start: '0x1680000', end: '0x1696C58', flags: '0x400005', alignment: '16' },
+	{ name: 'x3_mdimp2_module', memsize: '0xECA4', filesize: '0xECA4', start: '0x16B0000', end: '0x16BECA4', flags: '0x400005', alignment: '16' },
+	{ name: 'x3_mdimp3_module', memsize: '0x1A180', filesize: '0x1A180', start: '0x1520000', end: '0x153A180', flags: '0x400005', alignment: '16' },
+	{ name: 'x3_mdimp4_module', memsize: '0x1F850', filesize: '0x1F850', start: '0x1550000', end: '0x156F850', flags: '0x400005', alignment: '16' },
+	{ name: 'x3_mdimp6_module', memsize: '0x73068', filesize: '0x73068', start: '0x1580000', end: '0x15F3068', flags: '0x400005', alignment: '16' },
+	{ name: 'x3_mdimp8_module', memsize: '0x6590', filesize: '0x6590', start: '0x16F0000', end: '0x16F6590', flags: '0x400005', alignment: '16' },
+	{ name: 'x3_mdimp9_module', memsize: '0x36B24', filesize: '0x36B24', start: '0x1630000', end: '0x1666B24', flags: '0x400005', alignment: '16' },
+	{ name: 'xmb_plugin_module', memsize: '0x1BB34', filesize: '0x1BB34', start: '0x1400000', end: '0x141BB34', flags: '0x400005', alignment: '16' }
 ];
 
 
