@@ -155,6 +155,27 @@ var segments_text_v481D = [
 ];
 
 
+// Module Segments Info .data
+// Not Loaded By Default In Web Browser But Can Be Loaded From Web Browser
+var segments_other_data_v481D = [
+	{ name: 'download_plugin_module', memsize: '0x101BC', filesize: '0x7328', start: '0x1750000', end: '0x17601BC', flags: '0x600006', alignment: '16' },
+];
+
+
+// Module Segments Info .text
+// Not Loaded By Default In Web Browser But Can Be Loaded From Web Browser
+var segments_other_text_v481D = [
+	{ name: 'download_plugin_module', memsize: '0x51168', filesize: '0x51168', start: '0x2E40000', end: '0x2E91168', flags: '0x400005', alignment: '16' },
+];
+
+
+// Kernel Modules Loaded
+// Not Loaded By Default In Web Browser But Can Be Loaded From Web Browser
+var modules_other_v481D = [
+	{ name: 'download_plugin_module', memsize: '0x61324', start: '0x01751090', stop: '0x017510C0', prx: '/dev_flash/vsh/module/download_plugin.sprx' },
+];
+
+
 // Kernel Modules Loaded
 var modules_v481D = [
 	{ name: 'basic_plugins_module', memsize: '0x54A34', start: '0x00AD1724', stop: '0x00AD171C', prx: '/dev_flash/vsh/module/basic_plugins.sprx' },
