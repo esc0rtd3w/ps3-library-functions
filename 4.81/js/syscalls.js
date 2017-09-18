@@ -94,8 +94,8 @@ sys_timer_v481D =
 	sys_timer_stop: 0x04A, // int sys_timer_stop(sys_timer_t timer_id);
 	sys_timer_connect_event_queue: 0x04B, // int sys_timer_connect_event_queue(sys_timer_t timer_id, sys_event_queue_t queue_id, uint64_t name, uint64_t data1, uint64_t data2);
 	sys_timer_disconnect_event_queue: 0x04C, // int sys_timer_disconnect_event_queue(sys_timer_t timer_id);
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
+	sys_timer_usleep: 0x08D, // int sys_timer_usleep(usecond_t sleep_time);
+	sys_timer_sleep: 0x08E, // int sys_timer_sleep(second_t sleep_time);
 	aaaaaa: 0x000, // 
 }
 
@@ -117,20 +117,21 @@ sys_event_v481D =
 	sys_event_flag_wait: 0x055, // int sys_event_flag_wait(sys_event_flag_t id, uint64_t bitptn, uint32_t mode, uint64_t * result, usecond_t timeout);
 	sys_event_flag_trywait: 0x056, // int sys_event_flag_trywait(sys_event_flag_t id, uint64_t bitptn, uint32_t mode, uint64_t * result);
 	sys_event_flag_set: 0x057, // int sys_event_flag_set(sys_event_flag_t id, uint64_t bitptn);
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
+	sys_event_flag_clear: 0x076, // int sys_event_flag_clear(sys_event_flag_t id, uint64_t bitptn);
+	unk_0x077: 0x077, // root / int syscall(119, uint64_t *real_time_clock);
+	sys_event_queue_create: 0x080, // int sys_event_queue_create(sys_event_queue_t * equeue_id, sys_event_queue_attribute_t * attr, sys_ipc_key_t event_queue_key, int size);
+	sys_event_queue_destroy: 0x081, // int sys_event_queue_destroy(sys_event_queue_t equeue_id, int mode);
+	sys_event_queue_receive: 0x082, // int sys_event_queue_receive(sys_event_queue_t equeue_id, sys_event_t * event, usecond_t timeout);
+	sys_event_queue_tryreceive: 0x083, // int sys_event_queue_tryreceive(sys_event_queue_t equeue_id, sys_event_t * event_array, int size, int *number);
+	sys_event_flag_cancel: 0x084, // int sys_event_flag_cancel(sys_event_flag_t id, int *num);
+	sys_event_queue_drain: 0x085, // int sys_event_queue_drain(sys_event_queue_t equeue_id);
+	sys_event_port_create: 0x086, // int sys_event_port_create(sys_event_port_t * eport_id, int port_type, uint64_t name);
+	sys_event_port_destroy: 0x087, // int sys_event_port_destroy(sys_event_port_t eport_id);
+	sys_event_port_connect_local: 0x088, // int sys_event_port_connect_local(sys_event_port_t event_port_id, sys_event_queue_t event_queue_id);
+	sys_event_port_disconnect: 0x089, // int sys_event_port_disconnect(sys_event_port_t event_port_id);
+	sys_event_port_send: 0x08A, // int sys_event_port_send(sys_event_port_t eport_id, unint64_t data1, uint64_t data2, uint64_t data3);
+	sys_event_flag_get: 0x08B, // int sys_event_flag_get(sys_event_flag_t id, uint64_t * bitptn);
+	sys_event_port_connect_ipc: 0x08C, // int sys_event_port_connect_ipc(sys_event_port_t eport_id, sys_ipc_key_t event_queue_key);
 }
 
 
@@ -141,10 +142,10 @@ sys_semaphore_v481D =
 	sys_semaphore_wait: 0x05C, // int sys_semaphore_wait(sys_semaphore_t sem, usecond_t timeout);
 	sys_semaphore_trywait: 0x05D, // int sys_semaphore_trywait(sys_semaphore_t sem);
 	sys_semaphore_post: 0x05E, // int sys_semaphore_post(sys_semaphore_t sem, sys_semaphore_value_t val);
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
+	sys_semaphore_get_value: 0x072, // int sys_semaphore_get_value(sys_semaphore_t sem, sys_semaphore_value_t * val);
+	unk_0x073: 0x073, // 4 params
+	unk_0x074: 0x074, // 3 params
+	unk_0x075: 0x075, // 1 params : sys_lwmutex_t *lwmutex
 }
 
 
@@ -181,85 +182,82 @@ sys_cond_v481D =
 
 sys_lwcond_v481D =
 {
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
+	sys_lwcond_create: 0x06F, // int sys_lwcond_create(sys_lwcond_t *lwcond, sys_lwmutex_t *lwmutex, sys_lwcond_attribute_t *attr)
+	sys_lwcond_destroy: 0x070, // int sys_lwcond_destroy(sys_lwcond_t *lwcond)
+	sys_lwcond_queue_wait: 0x071, // 3 params
 }
 
 
 sys_rwlock_v481D =
 {
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
+	sys_rwlock_create: 0x078, // int sys_rwlock_create(sys_rwlock_t * rw_lock_id, sys_rwlock_attribute_t * attr);
+	sys_rwlock_destroy: 0x079, // int sys_rwlock_destroy(sys_rwlock_t rw_lock_id);
+	sys_rwlock_rlock: 0x07A, // int sys_rwlock_rlock(sys_rwlock_t rw_lock_id, usecond_t timeout);
+	sys_rwlock_tryrlock: 0x07B, // int sys_rwlock_tryrlock(sys_rwlock_t rw_lock_id);
+	sys_rwlock_runlock: 0x07C, // int sys_rwlock_runlock(sys_rwlock_t rw_lock_id);
+	sys_rwlock_wlock: 0x07D, // int sys_rwlock_wlock(sys_rwlock_t rw_lock_id, usecond_t timeout);
+	sys_rwlock_trywlock: 0x07E, // int sys_rwlock_trywlock(sys_rwlock_t rw_lock_id);
+	sys_rwlock_wunlock: 0x07F, // int sys_rwlock_wunlock(sys_rwlock_t rw_lock_id);
+	sys_rwlock_trywlock: 0x094, // int sys_rwlock_trywlock(sys_rwlock_t rw_lock_id);
 }
 
 
 sys_time_v481D =
 {
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
+	sys_time_set_timezone: 0x08F, // int sys_time_set_timezone(int timezone, int summertime)
+	sys_time_get_timezone: 0x090, // int sys_time_get_timezone(int *timezone, int *summertime)
+	sys_time_get_current_time: 0x091, // int sys_time_get_current_time(sys_time_sec_t * sec, sys_time_nsec_t * nsec);
+	sys_time_set_current_time: 0x092, // int sys_time_set_current_time(uint64_t sec, uint64_t nsec);
+	sys_time_get_timebase_frequency: 0x093, // uint64_t sys_time_get_timebase_frequency(void);
 }
 
 
 sys_spu_sys_raw_spu_v481D =
 {
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
+	sys_raw_spu_create_interrupt_tag: 0x096, // int sys_raw_spu_create_interrupt_tag(sys_raw_spu_t id,sys_class_id_t class_id, sys_hw_thread_t hwthread, sys_interrupt_tag_t *intrtag)
+	sys_raw_spu_set_int_mask: 0x097, // int sys_raw_spu_set_int_mask(sys_raw_spu_t id, sys_class_id_t class_id, uint64_t mask)
+	sys_raw_spu_get_int_mask: 0x098, // int sys_raw_spu_get_int_mask(sys_raw_spu_t id, sys_class_id_t class_id, uint64_t *mask)
+	sys_raw_spu_set_int_stat: 0x099, // int sys_raw_spu_set_int_stat(sys_raw_spu_t id, sys_class_id_t class_id, uint64_t stat)
+	sys_raw_spu_get_int_stat: 0x09A, // int sys_raw_spu_get_int_stat(sys_raw_spu_t id, sys_class_id_t class_id, uint64_t *stat)
+	sys_spu_image_get_information: 0x09B, // int sys_spu_image_get_information?(sys_spu_image_t *img, out:uint[4],out:uint[4])
+	sys_spu_image_open: 0x09C, // int sys_spu_image_open(sys_spu_image_t *img, const char *path)
+	sys_spu_image_import: 0x09D, // int sys_spu_image_import(sys_spu_image_t *img, const void *src, uint32_t type)
+	sys_spu_image_close: 0x09E, // int sys_spu_image_close(sys_spu_image_t *img);
+	sys_raw_spu_load: 0x09F, // 3 Params ( sys_spu_image_t * img, sys_addr_t alloc_addr, int size? ), needs much more proper information
+	sys_raw_spu_create: 0x0A0, // int sys_raw_spu_create(sys_raw_spu_t *id, sys_raw_spu_attribute_t *attr)
+	sys_raw_spu_destroy: 0x0A1, // int sys_raw_spu_destroy(sys_raw_spu_t id)
+	sys_raw_spu_read_puint_mb: 0x0A3, // int sys_raw_spu_read_puint_mb(sys_raw_spu_t id, uint32_t *value)
+	sys_spu_thread_get_exit_status: 0x0A5, // int sys_spu_thread_get_exit_status(sys_spu_thread_t id, int *status)
+	sys_spu_thread_set_argument: 0x0A6, // int sys_spu_thread_set_argument(sys_spu_thread_t id, sys_spu_thread_argument_t *arg)
+	sys_spu_thread_group_start_on_exit: 0x0A7, // 
+	sys_spu_initialize: 0x0A9, // int sys_spu_initialize(unsigned int max_usable_spu, unsigned int max_raw_spu)
+	sys_spu_thread_group_create: 0x0AA, // int sys_spu_thread_group_create(sys_spu_thread_group_t *id, unsigned int num, int prio, sys_spu_thread_group_attribute_t *attr)
+	sys_spu_thread_group_destroy: 0x0AB, // int sys_spu_thread_group_destroy(sys_spu_thread_group_t id)
+	sys_spu_thread_initialize: 0x0AC, // int sys_spu_thread_initialize(sys_spu_thread_t *thread,sys_spu_thread_group_t group,uint spu_num,sys_spu_image_t *img,sys_spu_thread_attribute_t *attr,sys_spu_thread_argument_t *arg)
+	sys_spu_thread_group_start: 0x0AD, // int sys_spu_thread_group_start(sys_spu_thread_group_t id)
+	sys_spu_thread_group_suspend: 0x0AE, // int sys_spu_thread_group_suspend(sys_spu_thread_group_t id)
+	sys_spu_thread_group_resume: 0x0AF, // int sys_spu_thread_group_resume(sys_spu_thread_group_t id)
+	sys_spu_thread_group_yield: 0x0B0, // int sys_spu_thread_group_yield(sys_spu_thread_group_t id)
+	sys_spu_thread_group_terminate: 0x0B1, // int sys_spu_thread_group_terminate(sys_spu_thread_group_t id, int value)
+	sys_spu_thread_group_join: 0x0B2, // int sys_spu_thread_group_join(sys_spu_thread_group_t gid, int *cause, int *status)
+	sys_spu_thread_group_set_priority: 0x0B3, // int sys_spu_thread_group_set_priority(sys_spu_thread_group_t id, int priority)
+	sys_spu_thread_group_get_priority: 0x0B4, // int sys_spu_thread_group_get_priority(sys_spu_thread_group_t id, int *priority)
+	sys_spu_thread_write_ls: 0x0B5, // int sys_spu_thread_write_ls(sys_spu_thread_t id, uint32_t address, uint64_t value, size_t type)
+	sys_spu_thread_read_ls: 0x0B6, // int sys_spu_thread_read_ls(sys_spu_thread_t id, uint32_t address, uint64_t *value, size_t type)
+	sys_spu_thread_write_snr: 0x0B8, // int sys_spu_thread_write_snr(sys_spu_thread_t id, int number, uint32_t value)
+	sys_spu_thread_group_connect_event: 0x0B9, // int sys_spu_thread_group_connect_event(sys_spu_thread_group_t id, sys_event_queue_t eq, sys_event_type_t et)
+	sys_spu_thread_group_disconnect_event: 0x0BA, // int sys_spu_thread_group_disconnect_event(sys_spu_thread_group_t id, sys_event_type_t et)
+	sys_spu_thread_set_spu_cfg: 0x0BB, // int sys_spu_thread_set_spu_cfg(sys_spu_thread_t id, uint64_t value)
+	sys_spu_thread_get_spu_cfg: 0x0BC, // int sys_spu_thread_get_spu_cfg(sys_spu_thread_t id, uint64_t *value)
+	sys_spu_thread_write_spu_mb: 0x0BE, // int sys_spu_thread_write_spu_mb(sys_spu_thread_t id, uint32_t value);
+	sys_spu_thread_connect_event: 0x0BF, // int sys_spu_thread_connect_event(sys_spu_thread_t id, sys_event_queue_t eq, sys_event_type_t et, uint8_t spup)
+	sys_spu_thread_disconnect_event: 0x0C0, // int sys_spu_thread_disconnect_event(sys_spu_thread_t id, sys_event_type_t et, uint8_t spup)
+	sys_spu_thread_bind_queue: 0x0C1, // int sys_spu_thread_bind_queue(sys_spu_thread_t id,sys_event_queue_t spuq,uint32_t spuq_num)
+	sys_spu_thread_unbind_queue: 0x0C2, // int sys_spu_thread_unbind_queue(sys_spu_thread_t id, uint32_t spuq_num)
+	sys_raw_spu_set_spu_cfg: 0x0C4, // int sys_raw_spu_set_spu_cfg(sys_raw_spu_t id, uint32_t value)
+	sys_raw_spu_get_spu_cfg: 0x0C5, // int sys_raw_spu_get_spu_cfg(sys_raw_spu_t id, uint32_t *value)
+	sys_spu_thread_recover_page_fault: 0x0C6, // int sys_spu_thread_recover_page_fault(sys_spu_thread_t id)
+	sys_raw_spu_recover_page_fault: 0x0C7, // int sys_raw_spu_recover_page_fault(sys_raw_spu_t id)
 	aaaaaa: 0x000, // 
 	aaaaaa: 0x000, // 
 	aaaaaa: 0x000, // 
