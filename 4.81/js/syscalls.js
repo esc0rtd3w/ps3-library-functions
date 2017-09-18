@@ -522,8 +522,8 @@ sys_prx_v481D =
 	unk_0x1D8: 0x1D8, // 2 Params
 	unk_0x1D9: 0x1D9, // 
 	unk_0x1DA: 0x1DA, // 
-	aaaaaa: 0x1DB, // int syscall_475(uint32_t type, void* npd?, void* klicensee, uint8_t* actdat, uint8_t* rif, uint8_t magicVersion)
-	aaaaaa: 0x1DC, // can only be either syscall476 (1,0) or syscall476 (0,1)
+	unk_0x1DB: 0x1DB, // int syscall_475(uint32_t type, void* npd?, void* klicensee, uint8_t* actdat, uint8_t* rif, uint8_t magicVersion)
+	unk_0x1DC: 0x1DC, // can only be either syscall476 (1,0) or syscall476 (0,1)
 	sys_prx_load_module: 0x1E0, // sys_prx_id_t sys_prx_load_module(const char* path, sys_prx_flags_t flags, sys_prx_load_module_option_t* pOpt)
 	sys_prx_start_module: 0x1E1, // int sys_prx_start_module(sys_prx_id_t id, sys_prx_flags_t flags, sys_prx_start_t* pOpt)
 	sys_prx_stop_module: 0x1E2, // int sys_prx_stop_module(sys_prx_id_t id, size_t args, void *argp, int *modres, sys_prx_flags_t flags, sys_prx_stop_module_option_t pOpt)
@@ -593,91 +593,91 @@ sys_config_v481D =
 
 sys_usbd_v481D =
 {
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
+	sys_usbd_initialize: 0x212, // 1 Param, out: *uint32_t
+	sys_usbd_finalize: 0x213, // 1 Param, in: handle/id
+	sys_usbd_get_device_list: 0x214, // 3 Params
+	sys_usbd_get_descriptor_size: 0x215, // 2 Params
+	sys_usbd_get_descriptor: 0x216, // 3 Params
+	sys_usbd_register_ldd: 0x217, // 3 Params
+	sys_usbd_unregister_ldd: 0x218, // 3 Params
+	sys_usbd_open_pipe: 0x219, // 7 Params
+	sys_usbd_open_default_pipe: 0x21A, // 2 Params
+	sys_usbd_close_pipe: 0x21B, // 2 Params
+	sys_usbd_receive_event: 0x21C, // 4 Params
+	sys_usbd_detect_event: 0x21D, // void
+	sys_usbd_attach: 0x21E, // 4 Params
+	sys_usbd_transfer_data: 0x21F, // 6 Params
+	sys_usbd_isochronous_transfer_data: 0x220, // 3 Params
+	sys_usbd_get_transfer_status: 0x221, // 5 Params
+	sys_usbd_get_isochronous_transfer_status: 0x222, // 5 Params
+	sys_usbd_get_device_location: 0x223, // 3 Params
+	sys_usbd_send_event: 0x224, // 2 Params
+	unk_0x225: 0x225, // 4 Params
+	sys_usbd_allocate_memory: 0x226, // 3 Params
+	sys_usbd_free_memory: 0x227, // 2 Params
+	unk_0x228: 0x228, // 1 Param
+	unk_0x229: 0x229, // void
+	unk_0x22A: 0x22A, // void
+	unk_0x22B: 0x22B, // void
+	sys_usbd_get_device_speed: 0x22C, // 3 Params, , , out:uint8_t[1]
+	unk_0x22D: 0x22D, // 5 Params
+	unk_0x22E: 0x22E, // 3 Params
+	sys_usbd_register_extra_ldd: 0x22F, // 6 Params
 }
 
 
 // Card Controller cf/sd/mmc/sm/ms
 sys_gl819_v481D =
 {
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
+	unk_0x230: 0x230, // 
+	unk_0x231: 0x231, // 1 Param: out:uint8_t [4] (cf/sd/mmc/sm/ms flag availability from hw config)
+	unk_0x232: 0x232, // gets MultiCardReader Firmware Version: syscall(0x232, out:uint8_t [2])
+	unk_0x233: 0x233, // 
+	unk_0x234: 0x234, // 
+	unk_0x235: 0x235, // 
+	unk_0x236: 0x236, // 
+	unk_0x237: 0x237, // 
+	unk_0x238: 0x238, // 
+	unk_0x239: 0x239, // 
 }
 
 
 sys_pad_manager_v481D =
 {
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
+	unk_0x23A: 0x23A, // 
+	sys_pad_ldd_unregister_controller: 0x23B, // int sys_pad_ldd_unregister_controller ( int32_t handle)
+	sys_pad_ldd_data_insert: 0x23C, // int sys_pad_ldd_data_insert (int32_t handle, cellpaddata* data /* uint8_t[0x84] */)
+	sys_pad_dbg_ldd_set_data_insert_mode: 0x23D, // int sys_pad_dbg_ldd_set_data_insert_mode ( int32_t handle, 0x100, uint32_t* mode , 4)
+	sys_pad_ldd_register_controller: 0x23E, // int sys_pad_ldd_register_controller/sys_pad_dbg_ldd_register_controller ( uint8_t[0x114] /* struct */, int32_t* out, 5, uint32_t device_capability<<1)
+	sys_pad_ldd_get_port_no: 0x23F, // int sys_pad_ldd_get_port_no (int32_t handle)
+	sys_pad_manager_1: 0x241, // int sys_pad_manager_.... (int8_t device_number?)
 }
 
 
 sys_bluetooth_v481D =
 {
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
+	unk_0x242: 0x242, // 
+	unk_0x243: 0x243, // 
+	unk_0x244: 0x244, // 
+	unk_0x245: 0x245, // 
+	unk_0x246: 0x246, // 
+	unk_0x247: 0x247, // gets Bluetooth Firmware Version: syscall(0x247, out:uint8_t [2])
+	unk_0x248: 0x248, // 
+	unk_0x249: 0x249, // 
+	unk_0x24A: 0x24A, // return 0x80010003
+	unk_0x24B: 0x24B, // 
+	unk_0x24C: 0x24C, // return 0x80010003
+	unk_0x24D: 0x24D, // return 0x80010003
+	unk_0x24E: 0x24E, // bt_set_device_info()
+	unk_0x24F: 0x24F, // return 0
+	unk_0x250: 0x250, // return 0
+	unk_0x251: 0x251, // getting bluetooth address
+	unk_0x252: 0x252, // return 0x80010003
+	unk_0x253: 0x253, // return 0x80010003
+	unk_0x254: 0x254, // return 0x80010003
+	unk_0x255: 0x255, // bt_cancel_connect_accept_controller(),deprecated
+	unk_0x256: 0x256, // 0 Param
+	unk_0x257: 0x257, // 2 Params: out:uint8_t[2], out:uint8_t[2]
 	aaaaaa: 0x000, // 
 	aaaaaa: 0x000, // 
 	aaaaaa: 0x000, // 
@@ -725,8 +725,8 @@ sys_bluetooth_usb_audio_v481D =
 
 sys_storage_v481D =
 {
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
+	aaaaaa: 0x258, // 
+	aaaaaa: 0x259, // 
 	aaaaaa: 0x000, // 
 	aaaaaa: 0x000, // 
 	aaaaaa: 0x000, // 
