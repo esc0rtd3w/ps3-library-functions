@@ -377,12 +377,12 @@ sys_game_v481D =
 	sys_game_watchdog_clear: 0x176, // int sys_game_watchdog_clear(void)
 	sys_game_set_system_sw_version: 0x177, // int sys_game_set_system_sw_version(uint64_t version)
 	sys_game_get_system_sw_version2: 0x178, // int sys_game_get_system_sw_version(void)
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
+	sys_game_board_storage_read: 0x19A, // 2 Params,out:uint8_t[0x10], uint8_t[1], HV System Manager access - ServiceID 54
+	sys_game_board_storage_write: 0x19B, // 2 Params,in:uint8_t[0x10],uint8_t[1], HV System Manager access - ServiceID 52
+	sys_game_get_rtc_status: 0x19C, // 
+	unk_0x19D: 0x19D, // 3 Params, HV System Manager access - ServiceID 56: out:uint8_t[1],out:uint8_t[1],out:uint8_t[1]
+	unk_0x19E: 0x19E, // 3 Params,in:packetid ,in:uint8_t[0x20],out:uint8_t[1], HV System Manager access - ServiceID 58
+	unk_0x19F: 0x19F, // 3 Params,in:packetid,out:uint8_t[0x20],out:uint8_t[1], HV System Manager access - ServiceID 60
 }
 
 
@@ -465,68 +465,84 @@ sys_sm_sys_ctrl_v481D =
 
 sys_tty_v481D =
 {
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
+	sys_tty_read: 0x192, // int sys_tty_read(unsigned int ch, void *buf, unsigned int len, unsigned int *preadlen);
+	sys_tty_write: 0x193, // int sys_tty_write(unsigned int ch, const void *buf, unsigned int len, unsigned int *pwritelen);
+	
+	// HV System Manager access - ServiceID 42 (BOOT_PARAMETER) [Network Settings for Debug] related, returns single/dual setting flag?
+	unk_0x194: 0x194, // 2 Params: uint64_t * param, uint8_t * st
+	
+	// HV System Manager access - ServiceID 44  factory_process_comp (0,0),  dbg_printf comp value
+	unk_0x195: 0x195, // 2 Params: uint16_t * comp?, uint8_t * st (status?/state?)
+	
+	/*
+	HV System Manager access - ServiceID 46 
+	comp? = 0x01,0x02,0x04,0x08,0x10,0x20,0x40,0x80,0x100
+	factory_process_comp (1,x) -> OR-Operation with comp
+	*/
+	unk_0x196: 0x196, // 2 Params: uint32_t comp? ,uint8_t * st
+	
+	/*
+	// HV System Manager access - ServiceID 48
+	factory_process_comp (2,0) -> ANDC-Operation with comp=0
+	*/
+	unk_0x197: 0x197, // 1 Param: uint8_t * st
+	
+	sys_sm_get_tzpb: 0x198, // 1 Param: out:uint8_t [0x20]  same as 384 just requires PM
+	sys_sm_get_fan_policy: 0x199, // int sys_sm_get_fan_policy(uint8_t id, uint8_t *st (status? state?), uint8_t *policy (mode), uint8_t * mode (speed), uint8_t *duty)
 }
 
 
 sys_overlay_v481D =
 {
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
+	sys_overlay_load_module: 0x1C2, // int sys_overlay_load_module(sys_overlay_t * ovlmid, const char *path, uint64_t flags, sys_addr_t * entry)
+	sys_overlay_unload_module: 0x1C3, // int sys_overlay_unload_module(sys_overlay_t ovlmid)
+	sys_overlay_get_module_list: 0x1C4, // int sys_overlay_get_module_list(sys_pid_t pid, size_t ovlmids_num, sys_overlay_t * ovlmids, size_t * num_of_modules)
+	sys_overlay_get_module_info: 0x1C5, // int sys_overlay_get_module_info(sys_pid_t pid,sys_overlay_t ovlmid, sys_overlay_module_info_t * info)
+	sys_overlay_load_module_by_fd: 0x1C6, // int sys_overlay_load_module_by_fd(sys_overlay_t * ovlmid, int fd, off64_t offset, uint64_t flags, sys_addr_t * entry)
+	sys_overlay_get_module_info2: 0x1C7, // int sys_overlay_get_module_info2(sys_pid_t pid, sys_overlay_t ovlmid, sys_overlay_module_info2_t * info)
+	sys_overlay_get_sdk_version: 0x1C8, // 2 Params
+	sys_overlay_get_module_dbg_info: 0x1C9, // 3 Params: (sys_pid_t pid, sys_overlay_t ovlmid, sys_overlay_module_dbg_t * info) ?
+	sys_overlay_get_module_dbg_info_too: 0x1CA, // 3 Params
 }
 
 
 sys_prx_v481D =
 {
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
+	sys_prx_dbg_get_module_id_list: 0x1CC, // sys_prx_dbg_get_module_id_list(sys_pid_t pid, sys_prx_dbg_get_module_list_t *pInfo)
+	sys_prx_get_module_id_by_address: 0x1CD, // sys_prx_id_t sys_prx_get_module_id_by_address(void* addr)
+	unk_0x1CE: 0x1CE, // 1 Param: uint8_t [0x50]
+	sys_prx_load_module_by_fd: 0x1CF, // sys_prx_id_t sys_prx_load_module_by_fd(int fd, off64_t offset, sys_prx_flags_t flags, sys_prx_load_module_option_t pOpt)
+	sys_prx_load_module_on_memcontainer_by_fd: 0x1D0, // sys_prx_id_t sys_prx_load_module_on_memcontainer_by_fd(int fd,off64_t offset,sys_memory_container_t mem_container,sys_prx_flags_t flags,sys_prx_load_module_option_t pOpt)
+	sys_prx_load_module_list: 0x1D1, // int sys_prx_load_module_list(int n, const char **path_list, uint64_t flags, sys_prx_load_module_list_option_t * pOpt, sys_prx_id_t * idlist)
+	sys_prx_load_module_list_on_memcontainer: 0x1D2, // sys_prx_id_t sys_prx_load_module_by_fd(int fd, off64_t offset, uint64_t flags, sys_prx_load_module_option_t * pOpt)
+	sys_prx_get_ppu_guid: 0x1D3, // sys_addr_t sys_prx_get_ppu_guid(sys_prx_id_t id)
+	unk_0x1D4: 0x1D4, // 
+	unk_0x1D6: 0x1D6, // int syscall 470 (uint32_t type?, void* npd? [0x60])
+	unk_0x1D7: 0x1D7, // int syscall_471(uint32_t type, char* titleID, void* klicensee, uint8_t* actdat, uint8_t* rif, int32_t licenseType, uint8_t* magicVersion);
+	unk_0x1D8: 0x1D8, // 2 Params
+	unk_0x1D9: 0x1D9, // 
+	unk_0x1DA: 0x1DA, // 
+	aaaaaa: 0x1DB, // int syscall_475(uint32_t type, void* npd?, void* klicensee, uint8_t* actdat, uint8_t* rif, uint8_t magicVersion)
+	aaaaaa: 0x1DC, // can only be either syscall476 (1,0) or syscall476 (0,1)
+	sys_prx_load_module: 0x1E0, // sys_prx_id_t sys_prx_load_module(const char* path, sys_prx_flags_t flags, sys_prx_load_module_option_t* pOpt)
+	sys_prx_start_module: 0x1E1, // int sys_prx_start_module(sys_prx_id_t id, sys_prx_flags_t flags, sys_prx_start_t* pOpt)
+	sys_prx_stop_module: 0x1E2, // int sys_prx_stop_module(sys_prx_id_t id, size_t args, void *argp, int *modres, sys_prx_flags_t flags, sys_prx_stop_module_option_t pOpt)
+	sys_prx_unload_module: 0x1E3, // int sys_prx_unload_module(sys_prx_id_t id, sys_prx_flags_t flags, sys_prx_unload_module_option_t pOpt);
+	sys_prx_register_module: 0x1E4, // int sys_prx_register_module(char * name, const sys_prx_register_module_option_t * pOpt)
+	sys_prx_query_module: 0x1E5, // int sys_prx_query_module(void) // only returns 0
+	sys_prx_register_library: 0x1E6, // int sys_prx_register_library(void* library)
+	sys_prx_unregister_library: 0x1E7, // int sys_prx_unregister_library(void* library) // only returns 0
+	sys_prx_link_library: 0x1E8, // int sys_prx_link_library(void) // only returns 0
+	sys_prx_unlink_library: 0x1E9, // int sys_prx_unlink_library(void) // only returns 0
+	sys_prx_query_library: 0x1EA, // int sys_prx_query_library(void) // only returns 0
+	unk_0x1EC: 0x1EC, // 4 Params
+	sys_prx_dbg_get_module_info: 0x1ED, // int sys_prx_dbg_get_module_info(sys_pid_t pid, sys_prx_id_t id, sys_prx_dbg_module_info* info)
+	sys_prx_get_module_list: 0x1EE, // int sys_prx_get_module_list(sys_prx_flags_t flags, sys_prx_get_module_list_t *pInfo);
+	sys_prx_get_module_info: 0x1EF, // int sys_prx_get_module_info(sys_prx_id_t id, sys_prx_flags_t flags, sys_prx_module_info_t *pInfo)
+	sys_prx_get_module_id_by_name: 0x1F0, // sys_prx_id_t sys_prx_get_module_id_by_name(const char* name, sys_prx_flags_t flags, sys_prx_get_module_id_by_name_option_t *pOpt)
+	sys_prx_load_module_on_memcontainer: 0x1F1, // sys_prx_id_t sys_prx_load_module_on_memcontainer(const char* path, sys_memory_container_t mem_container, sys_prx_flags_t flags, sys_prx_load_module_option_t pOpt)
+	sys_prx_start: 0x1F2, // int sys_prx_start (void) // only returns 0
+	sys_prx_stop: 0x1F3, // int sys_prx_stop(void)
 	aaaaaa: 0x000, // 
 	aaaaaa: 0x000, // 
 	aaaaaa: 0x000, // 
@@ -539,35 +555,39 @@ sys_prx_v481D =
 
 sys_hid_manager_v481D =
 {
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
+	sys_hid_manager_open: 0x1F4, // 2 Params
+	sys_hid_manager_close: 0x1F5, // 1 Param: uint32_t port_no
+	sys_hid_manager_read: 0x1F6, // 4 Params: uint32_t port_no,uint32_t packet_id, uint8_t[size], uint32_t size
+	sys_hid_manager_ioctl: 0x1F7, // 4 Params: uint32_t port_no,uint32_t packet_id, uint8_t[size], uint32_t size
+	
+	// param 1: device_type, 1 = pad, 2 = kb, 3 = mouse
+	sys_hid_manager_map_logical_id_to_port_id: 0x1F8, // int sc(int device_type, int device_no, int port_no)
+	sys_hid_manager_unmap_logical_id_to_port_id: 0x1F9, // int sc(int device_type, int device_no, int port_no)
+	
+	sys_hid_manager_add_hot_key_observer: 0x1FA, // 2 Params
+	sys_hid_manager_remove_hot_key_observer: 0x1FB, // 2 Params
+	sys_hid_manager_grab_focus: 0x1FC, // 1 Param: sys_pid_t pid (for example current pid)
+	sys_hid_manager_release_focus: 0x1FD, // 1 Param
+	sys_hid_manager_1: 0x1FE, // int syscall(510, void);
+	sys_hid_manager_set_: 0x1FF, // 1 Param
+	unk_0x200: 0x200, // 1 Param : int syscall(512,sys_pid_t pid), simple root-flag check?;
+	sys_hid_manager_2: 0x201, // 4 Params
+	sys_hid_manager_3: 0x202, // 3 Params
 }
 
 
 sys_config_v481D =
 {
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
+	sys_config_open: 0x204, // 2 Params : (sys_event_queue_t * equeue_id, uint64_t *out)
+	sys_config_close: 0x205, // sys_config_close(sys_event_queue_t * equeue_id);
+	sys_config_get_service_event: 0x206, // 4 Params
+	sys_config_add_service_listener: 0x207, // 6 Params
+	sys_config_remove_service_listener: 0x208, // 2 Params
+	sys_config_register_service: 0x209, // 7 Params
+	sys_config_unregister_service: 0x20A, // 2 Params
+	sys_config_io_event: 0x20B, // 
+	sys_config_1: 0x20C, // 
+	sys_config_2: 0x20D, // 
 }
 
 
@@ -606,6 +626,7 @@ sys_usbd_v481D =
 }
 
 
+// Card Controller cf/sd/mmc/sm/ms
 sys_gl819_v481D =
 {
 	aaaaaa: 0x000, // 
