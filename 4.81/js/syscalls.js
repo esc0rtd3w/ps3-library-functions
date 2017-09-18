@@ -332,51 +332,51 @@ sys_vm_sys_memory_sys_mmapper_v481D =
 	sys_mmapper_unmap_shared_memory: 0x14F, // 2 Params: (sys_addr_t start_addr,sys_memory_t *mem_id ) ?
 	sys_mmapper_change_address_access_right: 0x150, // int sys_mmapper_change_address_access_right(sys_addr_t start_addr, uint64_t flags);
 	sys_mmapper_search_and_map: 0x151, // int sys_mmapper_search_and_map(sys_addr_t start_addr, sys_memory_t mem_id, uint64_t flags, sys_addr_t * alloc_addr);
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
+	sys_mmapper_get_shared_memory_attribute: 0x152, // 2 Params
+	unk_0x153: 0x153, // 5 Params
+	unk_0x154: 0x154, // 2 Params
+	_sys_memory_container_create2: 0x155, // int _sys_memory_container_create2(sys_memory_container_t * cid, size_t yield_size);
+	sys_memory_container_destroy: 0x156, // int sys_memory_container_destroy? (sys_memory_container_t cid);
+	sys_memory_container_get_size: 0x157, // int sys_memory_container_get_size(sys_memory_info_t * mem_info, sys_memory_container_t cid);
+	sys_memory_budget_set: 0x158, // 
+	unk_0x159: 0x159, // 3 Params, a variation of sys_memory_container_destroy (sys_memory_container_t cid, int, &out)
+	unk_0x15A: 0x15A, // 
+	sys_memory_allocate: 0x15C, // int sys_memory_allocate(size_t size, uint64_t flags, sys_addr_t * alloc_addr);
+	sys_memory_free: 0x15D, // int sys_memory_free(sys_addr_t start_addr);
+	sys_memory_allocate_from_container: 0x15E, // int sys_memory_allocate_from_container(size_t size, sys_memory_container_t container, uint64_t flags, sys_addr_t * alloc_addr);
+	sys_memory_get_page_attribute: 0x15F, // int sys_memory_get_page_attribute(sys_addr_t addr, sys_page_attr_t * attr);
+	sys_memory_get_user_memory_size: 0x160, // int sys_memory_get_user_memory_size(sys_memory_info_t * mem_info);
+	sys_memory_get_user_memory_stat: 0x161, // int sys_memory_get_user_memory_stat(out:uint8[0x1C])
+	unk_0x162: 0x162, // 3 Params
+	unk_0x163: 0x163, // 2 Params: uint32_t *, uint32_t * (set 0, reset memory stats?)
+	sys_memory_allocate_colored: 0x164, // 4 Params
+	unk_0x165: 0x165, // 2 Params
+	unk_0x166: 0x166, // 5 Params
+	unk_0x167: 0x167, // 2 Params
+	unk_0x168: 0x168, // 7 Params
+	sys_memory_allocate_from_container_colored: 0x169, // 5 Params
+	sys_mmapper_allocate_memory_from_container: 0x16A, // sys_mmapper_allocate_memory_from_container(size_t size, sys_memory_container_t container, uint64_t flags, sys_memory_t *mem_id)
+	unk_0x16B: 0x16B, // 6 Params
+	unk_0x16C: 0x16C, // 
 }
 
 
 sys_uart_v481D =
 {
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
+	sys_uart_initialize: 0x16F, // syscall(367, void)
+	sys_uart_receive: 0x170, // sys_uart_receive(out: uint8_t buffer[SizeToReceive], int SizeToReceive (0x400/0x800), 0/1)
+	sys_uart_send: 0x171, // sys_uart_send(const void *buf, uint64_t size, uint64_t flags)
+	sys_uart_get_params: 0x172, // int sys_uart_get_params(out:buffer[0x10])
 }
 
 
 sys_game_v481D =
 {
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
+	sys_game_watchdog_start: 0x174, // 1 param: int time(r)
+	sys_game_watchdog_stop: 0x175, // int sys_game_watchdog_stop(void)
+	sys_game_watchdog_clear: 0x176, // int sys_game_watchdog_clear(void)
+	sys_game_set_system_sw_version: 0x177, // int sys_game_set_system_sw_version(uint64_t version)
+	sys_game_get_system_sw_version2: 0x178, // int sys_game_get_system_sw_version(void)
 	aaaaaa: 0x000, // 
 	aaaaaa: 0x000, // 
 	aaaaaa: 0x000, // 
@@ -388,30 +388,78 @@ sys_game_v481D =
 
 sys_sm_sys_ctrl_v481D =
 {
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
+	sys_sm_set_shop_mode: 0x179, // int sys_sm_set_shop_mode(int mode (0/1)) ( HV System Manager access - ServiceID 39 (SET_SHOP_DEMO_MODE))
+	sys_sm_get_ext_event2: 0x17A, // 4 Param, sc378(uint64_t * v1,uint64_t * v2, uint64_t * v3, 0=receive buffer/1=get queuing events), v1==7 -> yesHOT
+	
+	/*
+	0x1100/0x100 = turn off,
+	0x1200 = Lv2 Hard Reboot, 
+	0x200 = Lv2 Soft Reboot,
+	0x8201 = load lpar id 1
+	0x8202 = load lpar id 2
+	0x8204 = load lpar id 3 (PS2_NETEMU)
+	HV System Manager access - ServiceID 1 (REQUEST)+ 10 (DELIVER INTER LPAR PARAMETER)
+	*/
+	sys_sm_shutdown: 0x17B, // int sys_sm_shutdown(uint16_t op, const void * lpar_parameter, uint64_t parameter_size )
+	
+	sys_sm_get_params: 0x17C, // Params alias sys_get_system_parameter, 4 Params: uint64_t * unknown1, uint64_t * unknown2, uint64_t * unknown3, uint64_t * bootparam? (more info: #Boot_Parameter)
+	sys_sm_get_inter_lpar_parameter: 0x17D, // 2 Params: syscall(381,uint8_t lpar_parameter[param_size], int param_size (0x600));
+	sys_sm_: 0x17E, // int syscall(382, void); - prevents ps3 lpar shutdown ?
+	
+	/*
+	HV System Manager access - ServiceID 13 (TEMPERATURE))
+	2nd Byte conversion: r.shift (second_byte * 0x64 ) by 8
+	Example: 195 = 0xC3 -> 0xC3 * 0x64 -> 0x4C2C ->> shift -> 0x4C -> XX.76°C
+	*/
+	sys_game_get_temperature: 0x17F, // int sys_game_get_temperature(0=CELL/1=RSX,uint32_t *temperature)
+	
+	// HV System Manager access - ServiceID 15
+	sys_sm_get_tzpb: 0x180, // 1 Param: syscall(384,uint64_t *tzpb); (uint8_t [0x20]) Get TimeZone Presence
+	
+	// HV System Manager access - ServiceID 17
+	sys_sm_request_led: 0x181, // int sys_sm_request_led( int led_id(1=power,2=status or 3=disk), out:uint8_t led_action[1] )
+	
+	/*
+	led_id = 0,1 (STATUS),2 (POWER)(red, green, red+green combined: looks like yellow);
+	led_action = 0,1,2,3 (off,on,blink fast, blink slow)
+	*/
+	sys_sm_control_led: 0x182, // int sys_sm_control_led(uint8_t led_id, uint8_t led_action)
+	
+	sys_sm_get_platform_info: 0x183, // syscall(387, uint8_t platform_info[0x18]) / OS Version, Revision, System Software Version?
+	
+	// HV System Manager access - ServiceID 21 (RING_BUZZER)
+	sys_sm_ring_buzzer_too: 0x184, // 2 Params
+	
+	sys_sm_set_fan_policy: 0x185, // int sys_sm_set_fan_policy (in:uint8, in:uint8, in:uint8)
+	
+	// HV System Manager access - ServiceID 26 (REQUEST_ERROR_LOG)
+	sys_sm_request_error_log: 0x186, // 4 Params, uint8_t offset (0-0x20), uint8_t *, uint32_t *, uint32_t *)
+	
+	// HV System Manager access - ServiceID 28 (REQUEST_BE_COUNT)
+	sys_sm_request_be_count: 0x187, // 4 Params (uint8_t *,uint32_t* total_time_in_seconds,uint32_t* power_on_counter,uint32_t* power_off_counter)
+	
+	sys_sm_ring_buzzer: 0x188, // 3 Params: PacketID=0x1004, field2, field4 Hypervisor_Reverse_Engineering#Parameters_6 Parameters
+	
+	// gets hardware configuration
+	sys_sm_get_hw_config: 0x189, // syscall(393,uint8_t * res, uint64_t * hw_config)
+	
+	// HV System Manager access - ServiceID 30 (REQUEST_SC_VERSION) System_Controller_Firmware#.27info0.27 SC Firmware
+	sys_sm_request_scversion: 0x18A, // uint8_t SoftID[8],old_PatchID[8],new_PatchID[8]; lv2syscall3(394, (uint64_t)SoftID, (uint64_t)old_PatchID, (uint64_t)new_PatchID);
+	
+	// HV System Manager access - ServiceID 32 (REQUEST_SYSTEM_EVENT_LOG)
+	sys_sm_request_system_event_log: 0x18B, // int sys_sm_request_system_event_log(int offset(0 - 5),uint64_t *out,uint64_t *out,uint64_t *out,uint8_t buf[0x20], int flag ), 6 Params
+	
+	// HV System Manager access - ServiceID 34+38 (RTC_ALARM)
+	sys_sm_set_rtc_alarm: 0x18C, // int sys_sm_set_rtc_alarm(CellRtcTick *pTick)
+	
+	sys_sm_get_rtc_alarm: 0x18D, // 1 Param, HV System Manager access - ServiceID 36
+	sys_console_write: 0x18E, // int sys_console_write(const char *s, unsigned int len)(lv2,lv1::console::write_async
+	
+	// HV System Manager access - ServiceID 32 (REQUEST_SYSTEM_EVENT_LOG)
+	sys_request_system_event_log: 0x190, // int sys_request_system_event_log(int offset(0 - 5),uint64_t *out, int flag )
+	
+	// HV System Manager access - ServiceID 40 (BOOT_PARAMETER) also sends the param to syscon. related to 404
+	unk_0x191: 0x191, // 2 Params: uint64_t param,uint8_t * st (status?/state?)
 }
 
 
