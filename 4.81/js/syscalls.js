@@ -258,77 +258,80 @@ sys_spu_sys_raw_spu_v481D =
 	sys_raw_spu_get_spu_cfg: 0x0C5, // int sys_raw_spu_get_spu_cfg(sys_raw_spu_t id, uint32_t *value)
 	sys_spu_thread_recover_page_fault: 0x0C6, // int sys_spu_thread_recover_page_fault(sys_spu_thread_t id)
 	sys_raw_spu_recover_page_fault: 0x0C7, // int sys_raw_spu_recover_page_fault(sys_raw_spu_t id)
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
+	unk_0x0C8: 0x0C8, // 
+	unk_0x0C9: 0x0C9, // 
+	unk_0x0CA: 0x0CA, // 
+	unk_0x0CB: 0x0CB, // 
+	unk_0x0D1: 0x0D1, // 
+	unk_0x0D2: 0x0D2, // 
+	unk_0x0D3: 0x0D3, // 
+	unk_0x0D4: 0x0D4, // 
+	unk_0x0D5: 0x0D5, // 
+	unk_0x0D6: 0x0D6, // 
+	sys_dbg_mat_set_condition: 0x0D7, // int sys_dbg_mat_set_condition(sys_addr_t,int)
+	sys_dbg_mat_get_condition: 0x0D8, // int sys_dbg_mat_get_condition(sys_addr_t,int*)
+	unk_0x0D9: 0x0D9, // 
+	unk_0x0DA: 0x0DA, // 
+	unk_0x0DB: 0x0DB, // 
+	unk_0x0E2: 0x0E2, // 
+	sys_isolated_spu_create: 0x0E6, // int sys_isolated_spu_create(sys_raw_spu_t *id, uint8_t *source_spe, in?: args?,0,0,0)
+	sys_isolated_spu_destroy: 0x0E7, // int sys_isolated_spu_destroy(sys_raw_spu_t id)
+	sys_isolated_spu_start: 0x0E8, // int sys_isolated_spu_start(sys_raw_spu_t id)
+	sys_isolated_spu_create_interrupt_tag: 0x0E9, // int sys_isolated_spu_create_interrupt_tag(sys_raw_spu_t id, uint32_t class_id, uint32_t hwthread, sys_interrupt_tag_t *intrtag)
+	sys_isolated_spu_set_int_mask: 0x0EA, // int sys_isolated_spu_set_int_mask(sys_raw_spu_t id, uint32_t class_id, uint64_t mask)
+	sys_isolated_spu_get_int_mask: 0x0EB, // int sys_isolated_spu_get_int_mask(sys_raw_spu_t id, uint32_t class_id, uint64_t *mask)
+	sys_isolated_spu_set_int_stat: 0x0EC, // int sys_isolated_spu_set_int_stat(sys_raw_spu_t id, uint32_t class_id, uint64_t stat)
+	sys_isolated_spu_get_int_stat: 0x0ED, // int sys_isolated_spu_get_int_stat(sys_raw_spu_t id, uint32_t class_id, uint64_t * stat)
+	sys_isolated_spu_set_spu_cfg: 0x0EE, // int sys_isolated_spu_set_spu_cfg(sys_spu_thread_t id, uint64_t value)
+	sys_isolated_spu_get_spu_cfg: 0x0EF, // int sys_isolated_spu_get_spu_cfg(sys_spu_thread_t id, uint64_t * value)
+	sys_isolated_spu_read_puint_mb: 0x0F0, // int sys_isolated_spu_read_puint_mb(sys_raw_spu_t id, uint32_t * value)
+	sys_spu_thread_group_system_set_next_group: 0x0F4, // int sys_spu_thread_group_system_set_next_group(void)
+	sys_spu_thread_group_system_unset_next_group: 0x0F5, // int sys_spu_thread_group_system_unset_next_group(void)
+	sys_spu_thread_group_system_set_switch_group: 0x0F6, // int sys_spu_thread_group_system_set_switch_group(void)
+	sys_spu_thread_group_system_unset_switch_group: 0x0F7, // int sys_spu_thread_group_system_unset_switch_group(void)
+	sys_spu_thread_group_1: 0x0F8, // 5 Params
+	sys_spu_thread_group_2: 0x0F9, // int sc249(sys_spu_thread_group_t group)
+	sys_spu_thread_group_set_cooperative_victims: 0x0FA, // 2 Params
+	sys_spu_thread_group_connect_event_all_threads: 0x0FB, // int sys_spu_thread_group_connect_event_all_threads(sys_spu_thread_group_t id, sys_event_queue_t eq, uint64_t req, uint8_t *spup)
+	sys_spu_thread_group_disconnect_event_all_threads: 0x0FC, // int sys_spu_thread_group_disconnect_event_all_threads(sys_spu_thread_group_t id, uint8_t spup)
+	sys_spu_thread_group: 0x0FD, // 2 Params( sys_spu_thread_group_t id, out:uint8[0x40])
+	sys_spu_thread_group_log: 0x0FE, // int sys_spu_thread_group_log(int command, int *stat)
+	sys_spu_image_open_by_fd: 0x104, // int sys_spu_image_open_by_fd(sys_spu_image_t *img, int fd, off64_t offset)
 }
 
 
 sys_vm_sys_memory_sys_mmapper_v481D =
 {
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
+	sys_vm_memory_map: 0x12C, // int sys_vm_memory_map(size_t vsize, size_t psize, sys_memory_container_t container, uint64_t flag, uint64_t policy, sys_addr_t * addr);
+	sys_vm_unmap: 0x12D, // int sys_vm_unmap(sys_addr_t addr);
+	sys_vm_append_memory: 0x12E, // int sys_vm_append_memory(sys_addr_t addr, size_t size);
+	sys_vm_return_memory: 0x12F, // int sys_vm_return_memory(sys_addr_t addr, size_t size);
+	sys_vm_lock: 0x130, // int sys_vm_lock(sys_addr_t addr, size_t size);
+	sys_vm_unlock: 0x131, // int sys_vm_unlock(sys_addr_t addr, size_t size);
+	sys_vm_touch: 0x132, // int sys_vm_touch(sys_addr_t addr, size_t size);
+	sys_vm_flush: 0x133, // int sys_vm_flush(sys_addr_t addr, size_t size);
+	sys_vm_invalidate: 0x134, // int sys_vm_invalidate(sys_addr_t addr, size_t size);
+	sys_vm_store: 0x135, // int sys_vm_store(sys_addr_t addr, size_t size);
+	sys_vm_sync: 0x136, // int sys_vm_sync(sys_addr_t addr, size_t size);
+	sys_vm_test: 0x137, // int sys_vm_test(sys_addr_t addr, size_t size, uint64_t * result);
+	sys_vm_get_statistics: 0x138, // int sys_vm_get_statistics(sys_addr_t addr, sys_vm_statistics_t * stat);
+	sys_vm_memory_map: 0x139, // same Params (size_t vsize, size_t psize, sys_memory_container_t container, uint64_t flag, uint64_t policy, sys_addr_t * addr); apperently maps different vm memory area
+	unk_0x13A: 0x13A, // 2 Params
+	unk_0x13B: 0x13B, // 1 Param
+	sys_memory_container_create: 0x144, // int sys_memory_container_create(sys_memory_container_t * cid, size_t yield_size);
+	sys_memory_container_destroy: 0x145, // int sys_memory_container_destroy(sys_memory_container_t cid);
+	sys_mmapper_allocate_fixed_address: 0x146, // int sys_mmapper_allocate_fixed_address(void);
+	sys_mmapper_enable_page_fault_notification: 0x147, // int sys_mmapper_enable_page_fault_notification(sys_addr_t start_addr, sys_event_queue_t queue_id);
+	unk_0x148: 0x148, // 7 Params
+	sys_mmapper_free_shared_memory: 0x149, // int sys_mmapper_free_shared_memory(sys_addr_t start_addr);
+	sys_mmapper_allocate_address: 0x14A, // int sys_mmapper_allocate_address(size_t size, uint64_t flags, size_t alignment, sys_addr_t * alloc_addr);
+	sys_mmapper_free_address: 0x14B, // int sys_mmapper_free_address(sys_addr_t start_addr);
+	sys_mmapper_allocate_shared_memory: 0x14C, // 4 Params: (uint32_t id? ('UMEM'), size_t size, size_t alignment, sys_memory_t * mem_id)
+	sys_mmapper_set_shared_memory_flag: 0x14D, // int sys_mmapper_set_shared_memory_flag(sys_addr_t, flags) ?;
+	sys_mmapper_map_shared_memory: 0x14E, // 3 Params: (sys_addr_t start_addr, sys_memory_t mem_id, uint64_t flags) ?
+	sys_mmapper_unmap_shared_memory: 0x14F, // 2 Params: (sys_addr_t start_addr,sys_memory_t *mem_id ) ?
+	sys_mmapper_change_address_access_right: 0x150, // int sys_mmapper_change_address_access_right(sys_addr_t start_addr, uint64_t flags);
+	sys_mmapper_search_and_map: 0x151, // int sys_mmapper_search_and_map(sys_addr_t start_addr, sys_memory_t mem_id, uint64_t flags, sys_addr_t * alloc_addr);
 	aaaaaa: 0x000, // 
 	aaaaaa: 0x000, // 
 	aaaaaa: 0x000, // 
