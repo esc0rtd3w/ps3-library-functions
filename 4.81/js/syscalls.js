@@ -70,30 +70,30 @@ sys_ppu_thread_v481D =
 
 sys_trace_v481D =
 {
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
+	sys_trace_create: 0x03C, // 
+	sys_trace_start: 0x03D, // 
+	sys_trace_stop: 0x03E, // 
+	sys_trace_update_top_index: 0x03F, // 
+	sys_trace_destroy: 0x040, // 
+	sys_trace_drain: 0x041, // 
+	sys_trace_attach_process: 0x042, // 
+	sys_trace_allocate_buffer: 0x043, // 
+	sys_trace_free_buffer: 0x044, // 
+	sys_trace_create2: 0x045, // 
+	sys_trace_create2_in_cbepm: 0x04D, // 
+	sys_trace_: 0x04E, // 
 }
 
 
 sys_timer_v481D =
 {
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
+	sys_timer_create: 0x046, // int sys_timer_create(sys_timer_t * timer_id);
+	sys_timer_destroy: 0x047, // int sys_timer_destroy(sys_timer_t timer_id);
+	sys_timer_get_information: 0x048, // int sys_timer_get_information(sys_timer_t timer_id, sys_timer_information_t * info);
+	sys_timer_start: 0x049, // int sys_timer_start(sys_timer_t timer_id, system_time_t base_time, usecond_t period);
+	sys_timer_stop: 0x04A, // int sys_timer_stop(sys_timer_t timer_id);
+	sys_timer_connect_event_queue: 0x04B, // int sys_timer_connect_event_queue(sys_timer_t timer_id, sys_event_queue_t queue_id, uint64_t name, uint64_t data1, uint64_t data2);
+	sys_timer_disconnect_event_queue: 0x04C, // int sys_timer_disconnect_event_queue(sys_timer_t timer_id);
 	aaaaaa: 0x000, // 
 	aaaaaa: 0x000, // 
 	aaaaaa: 0x000, // 
@@ -102,21 +102,21 @@ sys_timer_v481D =
 
 sys_interrupt_v481D =
 {
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
+	sys_interrupt_tag_create: 0x050, // int sys_interrupt_tag_create(sys_interrupt_tag_t * intrtag, sys_irqoutlet_id_t irq, sys_hw_thread_t hwthread);
+	sys_interrupt_tag_destroy: 0x051, // int sys_interrupt_tag_destroy(sys_interrupt_tag_t intrtag);
+	sys_interrupt_thread_establish: 0x054, // int sys_interrupt_thread_establish(sys_interrupt_thread_handle_t * ih, sys_interrupt_tag_t intrtag, uint64_t intrthread, uint64_t arg1, uint64_t arg2);
+	sys_interrupt_thread_eoi: 0x058, // void sys_interrupt_thread_eoi(void);
+	sys_interrupt_thread_disestablish: 0x059, // int sys_interrupt_thread_disestablish(sys_interrupt_thread_handle_t ih);
 }
 
 
 sys_event_v481D =
 {
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
+	sys_event_flag_create: 0x052, // int sys_event_flag_create(sys_event_flag_t * id, sys_event_flag_attribute_t * attr, uint64_t init);
+	sys_event_flag_destroy: 0x053, // int sys_event_flag_destroy(sys_event_flag_t id);
+	sys_event_flag_wait: 0x055, // int sys_event_flag_wait(sys_event_flag_t id, uint64_t bitptn, uint32_t mode, uint64_t * result, usecond_t timeout);
+	sys_event_flag_trywait: 0x056, // int sys_event_flag_trywait(sys_event_flag_t id, uint64_t bitptn, uint32_t mode, uint64_t * result);
+	sys_event_flag_set: 0x057, // int sys_event_flag_set(sys_event_flag_t id, uint64_t bitptn);
 	aaaaaa: 0x000, // 
 	aaaaaa: 0x000, // 
 	aaaaaa: 0x000, // 
@@ -136,11 +136,11 @@ sys_event_v481D =
 
 sys_semaphore_v481D =
 {
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
+	sys_semaphore_create: 0x05A, // int sys_semaphore_create(sys_semaphore_t * sem, sys_semaphore_attribute_t * attr, sys_semaphore_value_t initial_val, sys_semaphore_value_t max_val);
+	sys_semaphore_destroy: 0x05B, // int sys_semaphore_destroy(sys_semaphore_t sem);
+	sys_semaphore_wait: 0x05C, // int sys_semaphore_wait(sys_semaphore_t sem, usecond_t timeout);
+	sys_semaphore_trywait: 0x05D, // int sys_semaphore_trywait(sys_semaphore_t sem);
+	sys_semaphore_post: 0x05E, // int sys_semaphore_post(sys_semaphore_t sem, sys_semaphore_value_t val);
 	aaaaaa: 0x000, // 
 	aaaaaa: 0x000, // 
 	aaaaaa: 0x000, // 
@@ -150,32 +150,32 @@ sys_semaphore_v481D =
 
 sys_lwmutex_v481D =
 {
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
+	sys_lwmutex_create: 0x05F, // int sys_lwmutex_create(sys_lwmutex_t *lwmutex, sys_lwmutex_attribute_t *attr)
+	sys_lwmutex_destroy: 0x060, // int sys_lwmutex_destroy(sys_lwmutex_t *lwmutex)
+	sys_lwmutex_lock: 0x061, // int sys_lwmutex_lock(sys_lwmutex_t *lwmutex, usecond_t timeout)
+	sys_lwmutex_trylock: 0x062, // int sys_lwmutex_trylock(sys_lwmutex_t *lwmutex)
+	sys_lwmutex_unlock: 0x063, // int sys_lwmutex_unlock(sys_lwmutex_t *lwmutex)
 }
 
 
 sys_mutex_v481D =
 {
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
+	sys_mutex_create: 0x064, // int sys_mutex_create(sys_mutex_t * mutex_id, sys_mutex_attribute_t * attr);
+	sys_mutex_destroy: 0x065, // int sys_mutex_destroy(sys_mutex_t mutex_id);
+	sys_mutex_lock: 0x066, // int sys_mutex_lock(sys_mutex_t mutex_id, usecond_t timeout);
+	sys_mutex_trylock: 0x067, // int sys_mutex_trylock(sys_mutex_t mutex_id);
+	sys_mutex_unlock: 0x068, // int sys_mutex_unlock(sys_mutex_t mutex_id);
 }
 
 
 sys_cond_v481D =
 {
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
-	aaaaaa: 0x000, // 
+	sys_cond_create: 0x069, // int sys_cond_create(sys_cond_t * cond_id, sys_mutex_t mutex_id, sys_cond_attribute_t * attr);
+	sys_cond_destroy: 0x06A, // int sys_cond_destroy(sys_cond_t cond_id);
+	sys_cond_wait: 0x06B, // int sys_cond_wait(sys_cond_t cond_id, usecond_t timeout);
+	sys_cond_signal: 0x06C, // int sys_cond_signal(sys_cond_t cond_id);
+	sys_cond_signal_all: 0x06D, // int sys_cond_signal_all(sys_cond_t cond_id);
+	sys_cond_signal_to: 0x06E, // int sys_cond_signal_to(sys_cond_t cond_id, sys_ppu_thread_t thread);
 }
 
 
