@@ -67,3 +67,910 @@ sys_ppu_thread_v481D =
 	sys_ppu_thread_get_page_fault_context: 0x03A // int sys_ppu_thread_get_page_fault_context(sys_ppu_thread_t thread_id, sys_ppu_thread_icontext_t * ctxp);
 }
 
+
+sys_trace_v481D =
+{
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+}
+
+
+sys_timer_v481D =
+{
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+}
+
+
+sys_interrupt_v481D =
+{
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+}
+
+
+sys_event_v481D =
+{
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+}
+
+
+sys_semaphore_v481D =
+{
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+}
+
+
+sys_lwmutex_v481D =
+{
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+}
+
+
+sys_mutex_v481D =
+{
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+}
+
+
+sys_cond_v481D =
+{
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+}
+
+
+sys_lwcond_v481D =
+{
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+}
+
+
+sys_rwlock_v481D =
+{
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+}
+
+
+sys_time_v481D =
+{
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+}
+
+
+sys_spu_sys_raw_spu_v481D =
+{
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+}
+
+
+sys_vm_sys_memory_sys_mmapper_v481D =
+{
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+}
+
+
+sys_uart_v481D =
+{
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+}
+
+
+sys_game_v481D =
+{
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+}
+
+
+sys_sm_sys_ctrl_v481D =
+{
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+}
+
+
+sys_tty_v481D =
+{
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+}
+
+
+sys_overlay_v481D =
+{
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+}
+
+
+sys_prx_v481D =
+{
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+}
+
+
+sys_hid_manager_v481D =
+{
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+}
+
+
+sys_config_v481D =
+{
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+}
+
+
+sys_usbd_v481D =
+{
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+}
+
+
+sys_gl819_v481D =
+{
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+}
+
+
+sys_pad_manager_v481D =
+{
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+}
+
+
+sys_bluetooth_v481D =
+{
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+}
+
+
+sys_bluetooth_usb_v481D =
+{
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+}
+
+
+sys_bluetooth_usb_audio_v481D =
+{
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+}
+
+
+sys_storage_v481D =
+{
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+}
+
+
+sys_io_v481D =
+{
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+}
+
+
+sys_gpio_v481D =
+{
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+}
+
+
+sys_fsw_v481D =
+{
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+}
+
+
+sys_rsx_audio_v481D =
+{
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+}
+
+
+sys_rsx_v481D =
+{
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+}
+
+
+sys_bdemu_v481D =
+{
+	aaaaaa: 0x000, // 
+}
+
+
+sys_net_v481D =
+{
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+}
+
+
+lv2_fs_v481D =
+{
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+}
+
+
+sys_process_socket_service_v481D =
+{
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+}
+
+
+sys_ss_sys_get_v481D =
+{
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+}
+
+
+sys_deci3_v481D =
+{
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+}
+
+
+sys_dbg_v481D =
+{
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+	aaaaaa: 0x000, // 
+}
+
